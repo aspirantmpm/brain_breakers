@@ -1,21 +1,19 @@
 .hero {
+    
+    margin: 0 auto;
     position: relative;
-    margin-left: 50px;
-
-
-    width: 320px;
+    
     color: $main-txt-cl;
     background-color: $dark-green-bg;
-    ;
 
-    background-image: url(/img/mobile/heroDots@1x.png);
+    background-image: url(/src/images/mobile/heroDots@1x.png);
     background-position: bottom;
     background-repeat: no-repeat;
 
     @media screen and (min-resolution: 2dppx),
     screen and (min-resolution: 192dpi),
     screen and (min-device-pixel-ratio: 2) {
-            background-image: url(/img/mobile/heroDots@2x.png);
+            background-image: url(/src/images/mobile/heroDots@2x.png);
     }
 }
 
@@ -86,12 +84,13 @@
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url(/img/tablet/heroDots@1x.png);
+        height: 342px;
+        background-image: url(/src/images/tablet/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
         screen and (min-resolution: 192dpi),
         screen and (min-device-pixel-ratio: 2) {
-                background-image: url(/img/tablet/heroDots@2x.png);
+                background-image: url(/src/images/tablet/heroDots@2x.png);
         }
     }
 
@@ -111,12 +110,13 @@
 
 @media screen and (min-width: 1200px) {
     .hero {
-        background-image: url(/img/desktop/heroDots@1x.png);
+        height: 590px;
+        background-image: url(/src/images/desktop/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
         screen and (min-resolution: 192dpi),
         screen and (min-device-pixel-ratio: 2) {
-                background-image: url(/img/desktop/heroDots@2x.png);
+                background-image: url(/src/images/desktop/heroDots@2x.png);
         }
     }
 
