@@ -1,4 +1,71 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 480px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+}
+
+.section__title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .section__title {
+    font-size: 22px;
+    line-height: 1.2272727273;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 30px;
+    line-height: 1.2333333333;
+  }
+}
+
+.section__title--bold {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2666666667;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .section__title--bold {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__title--bold {
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 12px 34px;
