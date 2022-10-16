@@ -87,11 +87,9 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/icons-png/cow@2x.png);
   }
-
   @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
   }
-
   @media screen and (min-width: $desktop) {
     margin-bottom: 40px;
   }
