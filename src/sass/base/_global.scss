@@ -20,7 +20,6 @@ body {
 
 .container {
   max-width: $mobile;
-  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -33,11 +32,7 @@ body {
   }
 }
 
-.section {
-  padding-top: 60px;
-}
-
-.section__title {
+.section__label {
   font-weight: 800;
   font-size: 18px;
   line-height: calc(22 / 18);
@@ -56,7 +51,7 @@ body {
   }
 }
 
-.section__title--bold {
+.section__title {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 30px;
