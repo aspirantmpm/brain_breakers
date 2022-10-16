@@ -20,7 +20,7 @@ body {
 
 .container {
   max-width: $mobile;
-  padding: 0 15px;
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -40,19 +40,19 @@ body {
 .section__title {
   font-weight: 800;
   font-size: 18px;
-  line-height: calc(22px / 18px);
+  line-height: calc(22 / 18);
   text-align: center;
   margin-bottom: 12px;
   color: $accent-txt-cl;
 
   @media screen and (min-width: $tablet) {
     font-size: 22px;
-    line-height: calc(27px / 22px);
+    line-height: calc(27 / 22);
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 30px;
-    line-height: calc(37px / 30px);
+    line-height: calc(37 / 30);
   }
 }
 
@@ -60,17 +60,17 @@ body {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 30px;
-  line-height: calc(38px / 30px);
+  line-height: calc(38 / 30);
   letter-spacing: 0.04em;
 
   @media screen and (min-width: $tablet) {
     font-size: 36px;
-    line-height: calc(42px / 36px);
+    line-height: calc(42 / 36);
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 36px;
-    line-height: calc(45px / 36px);
+    line-height: calc(45 / 36);
     letter-spacing: 0.06em;
   }
 }
