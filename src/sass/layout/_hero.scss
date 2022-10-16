@@ -1,4 +1,4 @@
-.hero {
+.hero .container {
     margin: 0 auto;
     position: relative;
     
@@ -8,6 +8,7 @@
     background-image: url(/src/images/mobile/heroDots@1x.png);
     background-position: bottom;
     background-repeat: no-repeat;
+    background-size: contain;
 
     @media screen and (min-resolution: 2dppx),
     screen and (min-resolution: 192dpi),
@@ -82,7 +83,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .hero {
+    .hero .container {
         height: 342px;
         background-image: url(/src/images/tablet/heroDots@1x.png);
 
@@ -108,7 +109,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .hero {
+    .hero .container {
         height: 590px;
         background-image: url(/src/images/desktop/heroDots@1x.png);
 

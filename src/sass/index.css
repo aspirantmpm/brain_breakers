@@ -91,7 +91,7 @@ body {
   margin: -1px;
 }
 
-.hero {
+.hero .container {
   margin: 0 auto;
   position: relative;
   color: #fcfcfc;
@@ -99,9 +99,10 @@ body {
   background-image: url(/src/images/mobile/heroDots@1x.png);
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx), screen and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) {
-  .hero {
+  .hero .container {
     background-image: url(/src/images/mobile/heroDots@2x.png);
   }
 }
@@ -171,13 +172,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero .container {
     height: 342px;
     background-image: url(/src/images/tablet/heroDots@1x.png);
   }
 }
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
-  .hero {
+  .hero .container {
     background-image: url(/src/images/tablet/heroDots@2x.png);
   }
 }
@@ -196,13 +197,13 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero {
+  .hero .container {
     height: 590px;
     background-image: url(/src/images/desktop/heroDots@1x.png);
   }
 }
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
-  .hero {
+  .hero .container {
     background-image: url(/src/images/desktop/heroDots@2x.png);
   }
 }
