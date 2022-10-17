@@ -1,0 +1,133 @@
+.hero .container {
+    margin: 0 auto;
+    position: relative;
+    
+    color: $main-txt-cl;
+    background-color: $dark-green-bg;
+
+    background-image: url(/src/images/mobile/heroDots@1x.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-resolution: 2dppx),
+    screen and (min-resolution: 192dpi),
+    screen and (min-device-pixel-ratio: 2) {
+            background-image: url(/src/images/mobile/heroDots@2x.png);
+    }
+}
+
+.hero__title {
+    margin: 0 0 20px;
+    font-family: $secondary-font;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.hero__title--first-line {
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+}
+
+.hero__title--second-line {
+    font-size: 34px;
+    line-height: 33px;
+}
+
+.hero__title--third-line {
+    font-size: 37px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+}
+
+.hero__product {
+    outline: 1px solid tomato;
+    margin-bottom: 239px;
+    padding: 10px;
+    color: $accent-txt-cl;
+    background-color: transparent;
+    font-size: 8px;
+    font-family: $main-font;
+    font-weight: 600;
+    line-height: 10px;
+}
+
+.hero__modal-video {
+    outline: 1px solid tomato;
+    margin-left: 8px;
+    padding: 10px;
+    color: $yellow-txt-cl;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+
+    font-size: 8px;
+    font-family: $main-font;
+    font-weight: 600;
+    line-height: 10px;
+}
+
+.hero__icecream {
+    position: absolute;
+    bottom: -14%;
+    right: 4%;
+}
+
+.hero__plate {
+    display: none;
+}
+
+.hero__text {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hero .container {
+        height: 342px;
+        background-image: url(/src/images/tablet/heroDots@1x.png);
+
+        @media screen and (min-resolution: 2dppx),
+        screen and (min-resolution: 192dpi),
+        screen and (min-device-pixel-ratio: 2) {
+                background-image: url(/src/images/tablet/heroDots@2x.png);
+        }
+    }
+
+    .hero__icecream {
+        bottom: -15%;
+        right: 3%;
+    }
+
+    .hero__plate {
+        display: block;
+        position: absolute;
+        left: 32px;
+        bottom: 10px;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero .container {
+        height: 590px;
+        background-image: url(/src/images/desktop/heroDots@1x.png);
+
+        @media screen and (min-resolution: 2dppx),
+        screen and (min-resolution: 192dpi),
+        screen and (min-device-pixel-ratio: 2) {
+                background-image: url(/src/images/desktop/heroDots@2x.png);
+        }
+    }
+
+    .hero__icecream {
+        bottom: -17%;
+        right: 0;
+    }
+
+    .hero__plate {
+        left: 17px;
+        bottom: 65px;
+
+    }
+}
