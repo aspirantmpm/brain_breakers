@@ -1,18 +1,12 @@
 .section-advantages {
   background-color: $dark-green-bg;
   padding-bottom: 60px;
-  padding-left: 45px;
-  padding-right: 45px;
 
   @media screen and (min-width: $tablet) {
-    padding-left: 76px;
-    padding-right: 76px;
     padding-bottom: 204px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-left: 16px;
-    padding-right: 16px;
     padding-bottom: 180px;
   }
 }
@@ -78,6 +72,7 @@
   height: 50px;
   background-size: contain;
   background-image: url(../images/icons-png/cow.png);
+  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
@@ -103,6 +98,7 @@
   height: 50px;
   background-size: contain;
   background-image: url(../images/icons-png/weight.png);
+  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
@@ -127,6 +123,7 @@
   height: 50px;
   background-size: contain;
   background-image: url(../images/icons-png/icecream.png);
+  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;

@@ -20,15 +20,20 @@ body {
 
 .container {
   max-width: $mobile;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: $desktop) {
     max-width: $desktop;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 

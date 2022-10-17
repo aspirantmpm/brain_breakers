@@ -1,9 +1,11 @@
+.hero {
+    background-color: $dark-green-bg;
+}
+
 .hero .container {
-    margin: 0 auto;
     position: relative;
     
     color: $main-txt-cl;
-    background-color: $dark-green-bg;
 
     background-image: url(/src/images/mobile/heroDots@1x.png);
     background-position: bottom;
