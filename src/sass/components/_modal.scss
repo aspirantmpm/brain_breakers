@@ -1,0 +1,117 @@
+.overlay {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 100;
+
+  background-color: $overlay-bg;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 280px;
+
+  z-index: 1000;
+
+  padding: 28px 28px;
+
+  border: 2px solid $yellow-modal-br;
+  border-radius: 10px;
+
+  background-color: $modal-bg;
+
+  &.is-open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &--ingredients {
+    padding: 28px 20px 32px 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+
+    padding: 32px 60px;
+
+    &--buy-now {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+
+    &--ingredients {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+.modal__btn {
+  position: absolute;
+  cursor: pointer;
+
+  top: 8px;
+  right: 8px;
+
+  width: 16px;
+  height: 16px;
+
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $light-icon-cl;
+  }
+
+  @media screen and (max-width: 767) {
+    &--ingredients {
+      top: 28px;
+      right: 20px;
+
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.modal__close {
+  width: 100%;
+  height: 100%;
+
+  fill: $dark-icon-cl;
+}
