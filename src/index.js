@@ -31,26 +31,43 @@ document.addEventListener('DOMContentLoaded', function () {
     closeButtons = document.querySelectorAll('.js-modal-close');
 
   modalButtons.forEach(function (item) {
-    item.addEventListener('click', function (event) {
-      event.preventDefault();
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
       var modalId = this.getAttribute('data-modal'),
         modalElem = document.querySelector(
-          '.modal[data-modal="' + modalId + '"]'
+          '.js-modal[data-modal="' + modalId + '"]'
         );
-      var modalId = this.getAttribute('data-modal'),
-        modalElem = document.querySelector(
-          '.modal-mobile-menu[data-modal="' + modalId + '"]'
-        );
+
       modalElem.classList.add('is-open');
       overlay.classList.add('is-open');
     });
+  });
 
-    closeButtons.forEach(function (item) {
-      item.addEventListener('click', function (e) {
-        var parentModal = this.closest('.js-modal');
-        parentModal.classList.remove('is-open');
-        overlay.classList.remove('is-open');
-      });
+  closeButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      var parentModal = this.closest('.js-modal');
+
+      parentModal.classList.remove('is-open');
+      overlay.classList.remove('is-open');
     });
+  });
+
+  document.body.addEventListener(
+    'keyup',
+    function (e) {
+      var key = e.keyCode;
+
+      if (key == 27) {
+        document.querySelector('.js-modal.is-open').classList.remove('is-open');
+        document.querySelector('.js-modal-overlay').classList.remove('is-open');
+      }
+    },
+    false
+  );
+
+  overlay.addEventListener('click', function () {
+    document.querySelector('.js-modal.is-open').classList.remove('is-open');
+    this.classList.remove('is-open');
   });
 });
