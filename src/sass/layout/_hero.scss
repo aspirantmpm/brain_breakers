@@ -1,3 +1,5 @@
+
+
 .hero {
     color: $main-txt-cl;
     background-color: $dark-green-bg;
@@ -5,8 +7,9 @@
 
 
 .hero .container {
-    padding: 0 20px;
     position: relative;
+    padding-top: 58px;
+    padding-bottom: 239px;
 
     background-image: url(/src/images/mobile/heroDots@1x.png);
     background-position: bottom;
@@ -21,66 +24,33 @@
 }
 
 .hero__title {
-    margin: 0 0 20px;
     font-family: $secondary-font;
     font-weight: 400;
     text-transform: uppercase;
-}
 
-.hero__title--first-line {
-    font-size: 26px;
-    line-height: 1.15;
-
-}
-
-.hero__title--second-line {
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
 }
+
 
 .hero__title--third-line {
-    font-size: 37px;
+    font-size: 34px;
     line-height: 1;
-    letter-spacing: 0.04em;
 }
 
-.hero__product {
-    width: 62px;
-    border: 2px solid $yellow-btn-br;
-    border-radius: 8px;
-
-    padding: 10px;
-    color: $accent-txt-cl;
-    background-color: transparent;
-    font-size: 8px;
-    font-family: $main-font;
-    font-weight: 600;
-    line-height: 1.25;
-
-    @media screen and (max-width: 767px) {
-        margin-bottom: 239px;
-    }
-}
-
-.hero__modal-video {
-    margin-left: 8px;
-    padding: 10px;
-    color: $yellow-txt-cl;
-    border: none;
-    background-color: transparent;
-    text-decoration: underline;
-
-    font-size: 8px;
-    font-family: $main-font;
-    font-weight: 600;
-    line-height: 1.25;
+.hero__buttons {
+    margin-top: 32px;
 }
 
 .hero__icecream {
     position: absolute;
-    bottom: -14%;
-    left: 14%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: -57px;   
 }
 
 .hero__plate {
@@ -93,8 +63,7 @@
 
 @media screen and (min-width: 768px) {
     .hero .container {
-        height: 342px;
-        padding: 0 32px;
+        padding: 32px 400px 20px 32px;
         background-image: url(/src/images/tablet/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
@@ -105,29 +74,33 @@
     }
 
     .hero__title {
-        margin-top: 36px;
         font-size: 18px;
         line-height: 1.33;
 
-        .hero__title--third-line {
-            font-size: 28px;
-            line-height: 1.1;
-            letter-spacing: 0.04em;
+        @media screen and (max-width: 1199px) {
+            .hero__title--third-line {
+            font-size: 24px;
+            line-height: 1;
+            }
         }
     }
 
     .hero__text {
         display: block;
-        margin: 56px 400px 20px 185px;
+        max-width: 151px;
+        margin: 56px 0 0 185px;
 
         font-size: 12px;
-        line-height: 1.41;
+        line-height: 1.4;
+    }
 
+    .hero__buttons {
+       margin-top: 20px;
     }
 
     .hero__icecream {
         bottom: -17%;
-        left: 48%;
+        left: 45%;
     }
 
     .hero__plate {
@@ -137,12 +110,40 @@
         bottom: 10px;
 
     }
+
+    .hero__arrow {
+        margin-top: 10px;
+        padding: 0;
+        border: none;
+        fill: $white-btn-cl;
+        background-color: transparent;
+
+        .hero__arrow--focus {
+            display: none;
+        }
+
+        .hero__arrow--hover {
+            display: none;
+        }
+
+        &:hover .hero__arrow--hover {
+            display: block;
+        }
+
+        &:hover .hero__arrow--normal, 
+        &:focus-within .hero__arrow--normal {
+            display: none;
+        }
+
+        &:focus-within .hero__arrow--focus {
+            display: block;
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .hero .container {
-        height: 590px;
-        padding: 0 16px;
+        padding: 44px 744px 100px 16px;
         background-image: url(/src/images/desktop/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
@@ -153,8 +154,6 @@
     }
 
     .hero__title {
-        margin-bottom: 28px;
-
         font-size: 38px;
         line-height: 1.26;
         letter-spacing: 00.04em;
@@ -171,10 +170,19 @@
 
     }
 
-    .hero__product {
-        width: 134px;
-        border-radius: 10px;
+    .hero__buttons {
+       margin-top: 28px;
+    }
+    
+    .hero__text {
+        max-width: 200px;
+        margin: 109px 0 0px 240px;
         font-size: 14px;
-        line-height: 1.28;
+        line-height: 1.42;
+
+    }
+
+    .hero__arrow {
+        margin-top: 18px;
     }
 }
