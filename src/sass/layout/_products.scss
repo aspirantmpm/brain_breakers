@@ -1,0 +1,261 @@
+.section__products {
+    background-image: url(../images/mobile/fon1.jpg), url(../images/mobile/fon2.jpg), url(../images/mobile/fon3.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top, center, bottom;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:321px) {
+        background-image: url(../images/tablet/iceCreamFon2@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/tablet/iceCreamFon2@2x.png);
+        }
+    }
+
+    @media screen and (min-width:769px) {
+        background-image: url(../images/desktop/iceCreamFon2@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/desktop/iceCreamFon2@2x.png);
+        }
+    }
+
+    @media screen and (min-width:1201px) {
+        background-image: url(../images/extraLarge/iceCreamFon2@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/extraLarge/iceCreamFon2@2x.png);
+        }
+    }
+}
+
+.section__title--center {
+    text-align: center;
+}
+
+.products__items {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width:767px) {
+        max-width: 280px;
+
+         &:not(:last-child) {
+            margin-bottom: 56px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        width: 224px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 370px;
+    }
+}
+
+.product__box {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        gap: 16px;
+        margin-top: 80px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-top: 120px;
+        gap: 32px;
+    }
+}
+.products__items {
+    display: flex;
+    height: 528px;
+    width: 280px;
+
+    align-items: flex-end;
+
+    @media screen and (min-width:768px) {
+        width: 224px;
+        height: 548px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 370px;
+        height: 720px;
+    }
+}
+
+.product1__about {
+    @include product__about(#AEC6A5);
+}
+.product1__about::before {
+    @include product__about__before(rgba(156, 190, 143, 0.7), 0px 5px 20px 0px rgba(10, 136, 23, 0.25))
+}
+.product1__about::after {
+    @include product__about__after(url(../images/mobile/product1@1x.png), url(../images/mobile/product1@2x.png));
+
+    @media screen and (min-width:768px) {
+        @include product__about__after(url(../images/tablet/product1@1x.png), url(../images/tablet/product1@2x.png));
+    }
+    @media screen and (min-width:1200px) {
+        @include product__about__after(url(../images/desktop/product1@1x.png), url(../images/desktop/product1@2x.png));
+    }
+
+
+}
+.product2__about {
+    @include product__about(#EFD478);
+}
+.product2__about::before {
+    @include product__about__before(rgba(248, 210, 78, 0.7), 0px 5px 20px 0px rgba(153, 114, 23, 0.25))
+}
+.product2__about::after {
+    @include product__about__after(url(../images/mobile/product2@1x.png), url(../images/mobile/product2@2x.png));
+    
+    @media screen and (min-width:768px) {
+        @include product__about__after(url(../images/tablet/product2@1x.png), url(../images/tablet/product2@2x.png));
+    }
+    @media screen and (min-width:1200px) {
+        @include product__about__after(url(../images/desktop/product2@1x.png), url(../images/desktop/product2@2x.png));
+    }
+}
+
+.product3__about {
+    @include product__about(#D6936D);
+}
+.product3__about::before {
+    @include product__about__before(rgba(213, 117, 63, 0.7), 0px 5px 20px 0px rgba(0, 0, 0, 0.25))
+}
+.product3__about::after {
+    @include product__about__after(url(../images/mobile/product3@1x.png), url(../images/mobile/product3@2x.png));
+    
+    @media screen and (min-width:768px) {
+        @include product__about__after(url(../images/tablet/product3@1x.png), url(../images/tablet/product3@2x.png));
+    }
+    @media screen and (min-width:1200px) {
+        @include product__about__after(url(../images/desktop/product3@1x.png), url(../images/desktop/product3@2x.png));
+    }
+}
+.product__name {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+   
+    margin-top: 123px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        margin-top: 107px;
+        font-size: 22px;
+        line-height: calc(27 / 22);
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 166px;
+        margin-bottom: 65x;
+        font-size: 30px;
+        line-height: calc(37 / 30);
+    }
+}
+
+.product__text {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.79;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    @media screen and (min-width:768px) {
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 64px;
+        margin-right: 64px;
+        font-size: 16px;
+        line-height: calc(28 / 16);
+    }
+}
+.more_about_products {
+    position: absolute;
+   
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    left: 50%;
+    bottom: 0px;
+
+    transform: translatex(-50%);
+
+    @media screen and (min-width:1200px) {
+        bottom: 40px;
+    }
+}
+
+.arrow {
+    display: block;
+    height: 100%;
+
+    .more_about_products:hover &,
+    .more_about_products:focus &,
+    .more_about_products:active &
+    {
+        display: none;
+    }
+}
+
+.more_about_products:active{
+    background-color: #EFD478;
+}
+.arrow_hover {
+    display: none;
+    height: 100%;
+    .more_about_products:hover &
+    {
+        display: block;
+    }
+    .more_about_products:active &
+    {
+        display: none;
+    }
+
+}
+.arrow_focus {
+    display: none;
+    height: 100%;
+
+    .more_about_products:focus &
+    {
+        display: block;
+    }
+
+}
+
+.more_about_products:hover,
+.more_about_products:focus {
+    cursor: pointer;
+    width: 50px;
+}
