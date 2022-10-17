@@ -1,11 +1,12 @@
 .hero {
+    color: $main-txt-cl;
     background-color: $dark-green-bg;
 }
 
+
 .hero .container {
+    padding: 0 20px;
     position: relative;
-    
-    color: $main-txt-cl;
 
     background-image: url(/src/images/mobile/heroDots@1x.png);
     background-position: bottom;
@@ -15,7 +16,7 @@
     @media screen and (min-resolution: 2dppx),
     screen and (min-resolution: 192dpi),
     screen and (min-device-pixel-ratio: 2) {
-            background-image: url(/src/images/mobile/heroDots@2x.png);
+        background-image: url(/src/images/mobile/heroDots@2x.png);
     }
 }
 
@@ -28,35 +29,41 @@
 
 .hero__title--first-line {
     font-size: 26px;
-    line-height: 33px;
-    letter-spacing: 0.04em;
+    line-height: 1.15;
+
 }
 
 .hero__title--second-line {
-    font-size: 34px;
-    line-height: 33px;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
 }
 
 .hero__title--third-line {
     font-size: 37px;
-    line-height: 42px;
+    line-height: 1;
     letter-spacing: 0.04em;
 }
 
 .hero__product {
-    outline: 1px solid tomato;
-    margin-bottom: 239px;
+    width: 62px;
+    border: 2px solid $yellow-btn-br;
+    border-radius: 8px;
+
     padding: 10px;
     color: $accent-txt-cl;
     background-color: transparent;
     font-size: 8px;
     font-family: $main-font;
     font-weight: 600;
-    line-height: 10px;
+    line-height: 1.25;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 239px;
+    }
 }
 
 .hero__modal-video {
-    outline: 1px solid tomato;
     margin-left: 8px;
     padding: 10px;
     color: $yellow-txt-cl;
@@ -67,13 +74,13 @@
     font-size: 8px;
     font-family: $main-font;
     font-weight: 600;
-    line-height: 10px;
+    line-height: 1.25;
 }
 
 .hero__icecream {
     position: absolute;
     bottom: -14%;
-    right: 4%;
+    left: 14%;
 }
 
 .hero__plate {
@@ -87,18 +94,40 @@
 @media screen and (min-width: 768px) {
     .hero .container {
         height: 342px;
+        padding: 0 32px;
         background-image: url(/src/images/tablet/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
         screen and (min-resolution: 192dpi),
         screen and (min-device-pixel-ratio: 2) {
-                background-image: url(/src/images/tablet/heroDots@2x.png);
+            background-image: url(/src/images/tablet/heroDots@2x.png);
         }
     }
 
+    .hero__title {
+        margin-top: 36px;
+        font-size: 18px;
+        line-height: 1.33;
+
+        .hero__title--third-line {
+            font-size: 28px;
+            line-height: 1.1;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    .hero__text {
+        display: block;
+        margin: 56px 400px 20px 185px;
+
+        font-size: 12px;
+        line-height: 1.41;
+
+    }
+
     .hero__icecream {
-        bottom: -15%;
-        right: 3%;
+        bottom: -17%;
+        left: 48%;
     }
 
     .hero__plate {
@@ -113,13 +142,22 @@
 @media screen and (min-width: 1200px) {
     .hero .container {
         height: 590px;
+        padding: 0 16px;
         background-image: url(/src/images/desktop/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
         screen and (min-resolution: 192dpi),
         screen and (min-device-pixel-ratio: 2) {
-                background-image: url(/src/images/desktop/heroDots@2x.png);
+            background-image: url(/src/images/desktop/heroDots@2x.png);
         }
+    }
+
+    .hero__title {
+        margin-bottom: 28px;
+
+        font-size: 38px;
+        line-height: 1.26;
+        letter-spacing: 00.04em;
     }
 
     .hero__icecream {
@@ -131,5 +169,12 @@
         left: 17px;
         bottom: 65px;
 
+    }
+
+    .hero__product {
+        width: 134px;
+        border-radius: 10px;
+        font-size: 14px;
+        line-height: 1.28;
     }
 }
