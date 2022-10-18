@@ -1,0 +1,47 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+.header__buy-now {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  padding: 12px 34px;
+  margin: 0 auto;
+
+  border: none;
+  border-radius: 10px;
+  background-color: $yellow-btn-bg;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $green-btn-bg;
+  }
+  &:focus {
+    color: $white-btn-cl;
+    stroke: currentColor;
+  }
+
+  &:disabled {
+    background-color: $grey-btn-bg;
+  }
+}
+
+.header__buy-arrow {
+  fill: none;
+  stroke: currentColor;
+}
