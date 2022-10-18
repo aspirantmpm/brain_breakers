@@ -105,9 +105,74 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
   ></iframe>
-  <p class="read-more__text">
+  <p class="modal__text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
     adipiscing elit, sed do eiusmod tempor incididunt ut labore et
   </p>
+</div>
+
+<!-- Franchise modal -->
+
+<div class="modal js-modal" data-modal="franchise-modal">
+  <button class="modal__btn js-modal-close">
+    <svg class="modal__close" width="16" height="16">
+      <use href="./images/sprite.svg#close-line"></use>
+    </svg>
+  </button>
+
+  <p class="modal__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </p>
+  <p class="modal__text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+
+  <form class="modal-form">
+    <input
+      id="name-field"
+      name="name"
+      type="text"
+      class="modal-form__input"
+      placeholder=" "
+      pattern="[a-z]"
+    /><label for="name-field" class="modal-form__label">Name</label>
+
+    <input
+      id="phone-field"
+      name="phone"
+      type="tel"
+      class="modal-form__input"
+      placeholder=" "
+      pattern="[0-9]{9}"
+    />
+    <label for="phone-field" class="modal-form__label">Phone</label>
+
+    <input
+      id="email-field"
+      name="email"
+      type="email"
+      class="modal-form__input"
+      placeholder=" "
+      pattern=".+@\."
+    /><label for="email-field" class="modal-form__label">Email</label>
+
+    <textarea
+      id="comment-field"
+      rows="4"
+      class="modal-form__input modal-form__input--textarea"
+      placeholder=" "
+    ></textarea>
+    <label
+      for="comment-field"
+      class="modal-form__label modal-form__label--comment"
+      >Comment</label
+    >
+
+    <button class="btn submit__btn" type="submit">Submit</button>
+  </form>
 </div>
