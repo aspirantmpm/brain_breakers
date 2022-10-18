@@ -1,7 +1,7 @@
 // Fonts
-$main-font: "Montserrat", sans-serif;
-$secondary-font: "Seymour One", sans-serif;
-$additional-font: "Roboto", sans-serif;
+$main-font: 'Montserrat', sans-serif;
+$secondary-font: 'Seymour One', sans-serif;
+$additional-font: 'Roboto', sans-serif;
 
 // Text Colors
 $main-txt-cl: #fcfcfc;
@@ -15,8 +15,12 @@ $white-bg: #ffffff;
 $yellow-bg: #f8d24e;
 $light-green-bg: #aec6a5;
 $dark-green-bg: #84a178;
+$mob-menu-bg: #85a279;
+$tab-menu-bg: #97af8d;
 $brown-bg: #d6936d;
 $input-bg: rgba(248, 210, 78, 0.1);
+$overlay-bg: rgba(0, 0, 0, 0.3);
+$modal-bg: #fcfcfc;
 $green-circle-bg: linear-gradient(
     0deg,
     rgba(156, 190, 143, 0.7),
@@ -35,8 +39,12 @@ $brown-circle-bg: linear-gradient(
     rgba(213, 117, 63, 0.7)
   ),
   #d9d9d9;
-  
-$green-small-circle-bg: #9CBE8F;  
+
+$green-small-circle-bg: #9cbe8f;
+
+//Icons Colors
+$dark-icon-cl: #131313;
+$light-icon-cl: #fcfcfc;
 
 // Borders
 $yellow-modal-br: #f8d24e;
@@ -44,10 +52,10 @@ $green-br: #96af8c;
 $green-input-br: #84a178;
 $yellow-br: #efd478;
 $brown-br: #d6936d;
-$green-ellipse-br: #9CBE8F;
+$green-ellipse-br: #9cbe8f;
 
 // Buttons Text color
-$black-btn-cl: #000000;
+$black-btn-cl: #131313;
 $white-btn-cl: #fcfcfc;
 $yellow-btn-cl: #f8d24e;
 $green-btn-cl: #0a8817;
