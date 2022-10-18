@@ -1,0 +1,26 @@
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address__tittle {
+    border-radius: 4px;
+    background-color: $yellow-txt-cl;
+    color: $accent-txt-cl;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    font-family: $main-font;
+    line-height: calc(23 / 12);
+
+}
+
+.address__item {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    background-color: $main-txt-cl;
+    padding: 40px 32px;
+    width: 280px;
+    height: 412px;
+}
