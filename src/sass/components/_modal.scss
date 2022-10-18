@@ -210,6 +210,10 @@
 
 // Franshize modal styles
 
+.modal-form {
+  margin-top: 24px;
+}
+
 .modal-form__label {
   font-weight: 400;
   font-size: 12px;
@@ -217,18 +221,24 @@
   line-height: calc(17 / 12);
   padding-left: 12px;
   color: $accent-txt-cl;
-  transform: translateY(24px);
+  transform: translateY(-25px);
   transform-origin: left top;
   cursor: text;
   transition: all 0.3s;
   display: block;
-  &:not(:last-child) {
-    margin-bottom: 12px;
-  }
+
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: calc(20 / 14);
-    transform: translateY(32px);
+    transform: translateY(-32px);
+  }
+}
+
+.modal-form__label--comment {
+  transform: translateY(-60px);
+
+  @media screen and (min-width: $tablet) {
+    transform: translateY(-80px);
   }
 }
 
@@ -268,16 +278,25 @@
   display: flex;
   flex-direction: column-reverse;
   margin: 0 auto;
-  height: 44px;
-
-  @media screen and (min-width: $tablet) {
-    height: 58px;
-  }
 }
 
-.modal-form__input:focus ~ .modal-form__label,
-.modal-form__input:not(:placeholder-shown) ~ .modal-form__label {
+.modal-form__input:focus + .modal-form__label,
+.modal-form__input:not(:placeholder-shown) + .modal-form__label {
   padding: 0;
   color: $accent-txt-cl;
-  transform: translateY(5px) scale(0.8);
+  transform: translateY(-45px) scale(0.8);
+
+  @media screen and (min-width: $tablet) {
+    transform: translateY(-55px) scale(0.8);
+  }
+}
+.modal-form__input:focus + .modal-form__label--comment,
+.modal-form__input:not(:placeholder-shown) + .modal-form__label--comment {
+  padding: 0;
+  color: $accent-txt-cl;
+  transform: translateY(-80px) scale(0.8);
+
+  @media screen and (min-width: $tablet) {
+    transform: translateY(-100px) scale(0.8);
+  }
 }

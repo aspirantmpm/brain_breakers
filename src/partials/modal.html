@@ -133,45 +133,45 @@
   </p>
 
   <form class="modal-form">
-    <div class="modal-form__field">
-      <input
-        id="name-field"
-        name="name"
-        type="text"
-        class="modal-form__input"
-        placeholder=" "
-      /><label for="name-field" class="modal-form__label">Name</label>
-    </div>
-    <div class="modal-form__field">
-      <input
-        id="phone-field"
-        name="phone"
-        type="tel"
-        class="modal-form__input"
-        placeholder=" "
-      />
-      <label for="phone-field" class="modal-form__label">Phone</label>
-    </div>
+    <input
+      id="name-field"
+      name="name"
+      type="text"
+      class="modal-form__input"
+      placeholder=" "
+      pattern="[a-z]"
+    /><label for="name-field" class="modal-form__label">Name</label>
 
-    <div class="modal-form__field">
-      <input
-        id="email-field"
-        name="email"
-        type="email"
-        class="modal-form__input"
-        placeholder=" "
-      /><label for="email-field" class="modal-form__label">Email</label>
-    </div>
+    <input
+      id="phone-field"
+      name="phone"
+      type="tel"
+      class="modal-form__input"
+      placeholder=" "
+      pattern="[0-9]{9}"
+    />
+    <label for="phone-field" class="modal-form__label">Phone</label>
 
-    <div class="modal-form__field">
-      <textarea
-        id="comment-field"
-        rows="4"
-        class="modal-form__input modal-form__input--textarea"
-        placeholder=" "
-      ></textarea>
-      <label for="comment-field" class="modal-form__label">Comment</label>
-    </div>
+    <input
+      id="email-field"
+      name="email"
+      type="email"
+      class="modal-form__input"
+      placeholder=" "
+      pattern=".+@\."
+    /><label for="email-field" class="modal-form__label">Email</label>
+
+    <textarea
+      id="comment-field"
+      rows="4"
+      class="modal-form__input modal-form__input--textarea"
+      placeholder=" "
+    ></textarea>
+    <label
+      for="comment-field"
+      class="modal-form__label modal-form__label--comment"
+      >Comment</label
+    >
 
     <button class="btn submit__btn" type="submit">Submit</button>
   </form>
