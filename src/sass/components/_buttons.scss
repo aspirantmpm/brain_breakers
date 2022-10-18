@@ -1,5 +1,7 @@
 .btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 12px 34px;
   cursor: pointer;
   border: none;
@@ -31,11 +33,11 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  width: 152px;
   line-height: 1.21;
 }
 
 .hero__btn {
+  display: inline-block;
   @media screen and (max-width: 1199px) {
     font-size: 8px;
     line-height: 1.25;
@@ -89,10 +91,6 @@
   }
 }
 
-.about__btn {
-  width: 164px;
-}
-
 .contacts__btn {
   width: 196px;
   &--transparent {
@@ -110,5 +108,3 @@
   }
   transition: border $anim, background-color $anim;
 }
-
-
