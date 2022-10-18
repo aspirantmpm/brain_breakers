@@ -8,22 +8,24 @@
   <a class="modal-mobile-menu__logo" href="./index.html">
     <picture>
       <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/modal/mobile-menu/mobile-menu-logo_tab-@1x.png 1x,
-          ./images/modal/mobile-menu/mobile-menu-logo_tab-@2x.png 2x
-        "
-      />
-      <source
         media="(maxwidth: 767px)"
         srcset="
           ./images/modal/mobile-menu/mobile-menu-logo_mob-@1x.png 1x,
           ./images/modal/mobile-menu/mobile-menu-logo_mob-@2x.png 2x
         "
       />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/modal/mobile-menu/mobile-menu-logo_tab-@1x.png 1x,
+          ./images/modal/mobile-menu/mobile-menu-logo_tab-@2x.png 2x
+        "
+      />
       <img
         src="./images/modal/mobile-menu/mobile-menu-logo_mob-@2x.png"
         alt="logo icecream"
+        width="40"
+        height="37"
       />
     </picture>
   </a>
@@ -57,7 +59,7 @@
   </button>
 </div>
 
-<!-- location modal -->
+<!-- our locations modal -->
 
 <div class="modal js-modal" data-modal="location-modal">
   <button class="modal__btn js-modal-close">
@@ -66,7 +68,7 @@
     </svg>
   </button>
 
-  <p class="modal__title">Our Locations</p>
+  <p class="modal__title modal__title--location">Our Locations</p>
 
   <iframe
     class="location-map"
@@ -85,4 +87,78 @@
     rel="noopener norefferer nofollow"
     >Open map</a
   >
+</div>
+
+<!-- ingredients modal -->
+
+<div class="modal modal--ingredients js-modal" data-modal="ingredients-modal">
+  <button class="modal__btn modal__btn--ingredients js-modal-close">
+    <svg class="modal__close" width="16" height="16">
+      <use href="./images/sprite.svg#close-line"></use>
+    </svg>
+  </button>
+
+  <p class="modal__title modal__title--ingredients">Chololate icecream</p>
+
+  <div class="modal-ingredients-img-wrap">
+    <picture>
+      <source
+        srcset="
+          ./images/modal/ingredients@1x.png 1x,
+          ./images/modal/ingredients@2x.png 2x
+        "
+      />
+      <img alt="ice cream illustration" width="131" height="131" />
+    </picture>
+  </div>
+
+  <ul class="modal-ingredients-desc">
+    <li class="modal-ingredients-desc__item">
+      <p class="modal-ingredients-desc__text-val">320</p>
+      <p class="modal-ingredients-desc__text-desc">kcal</p>
+    </li>
+    <li class="modal-ingredients-desc__item">
+      <p class="modal-ingredients-desc__text-val">4g</p>
+      <p class="modal-ingredients-desc__text-desc">Prote...</p>
+    </li>
+    <li class="modal-ingredients-desc__item">
+      <p class="modal-ingredients-desc__text-val">8,2g</p>
+      <p class="modal-ingredients-desc__text-desc">Fats</p>
+    </li>
+    <li class="modal-ingredients-desc__item">
+      <p class="modal-ingredients-desc__text-val">40,4g</p>
+      <p class="modal-ingredients-desc__text-desc">Carbs</p>
+    </li>
+  </ul>
+
+  <p class="modal-ingredients-title">Ingredients</p>
+
+  <ul class="modal-ingtedients">
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Milk</p>
+      <p class="modal-ingredients__values">100ml</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Belgian chocolate</p>
+      <p class="modal-ingredients__values">20g</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Cream</p>
+      <p class="modal-ingredients__values">150 ml</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Cocoa powder</p>
+      <p class="modal-ingredients__values">30g</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Sugar</p>
+      <p class="modal-ingredients__values">40g</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Vanilla sugar</p>
+      <p class="modal-ingredients__values">10g</p>
+    </li>
+  </ul>
+
+  <button class="modal-ingredients-btn" type="submit">Submit</button>
 </div>
