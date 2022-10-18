@@ -184,7 +184,7 @@
 }
 
 .product1__about {
-    @include product__about(#AEC6A5);
+    @include product__about($light-green-bg);
 }
 .product1__about::before {
     @include product__about__before(rgba(156, 190, 143, 0.7), 0px 5px 20px 0px rgba(10, 136, 23, 0.25))
@@ -202,7 +202,7 @@
 
 }
 .product2__about {
-    @include product__about(#EFD478);
+    @include product__about($yellow-br);
 }
 .product2__about::before {
     @include product__about__before(rgba(248, 210, 78, 0.7), 0px 5px 20px 0px rgba(153, 114, 23, 0.25))
@@ -219,7 +219,7 @@
 }
 
 .product3__about {
-    @include product__about(#D6936D);
+    @include product__about($brown-bg);
 }
 .product3__about::before {
     @include product__about__before(rgba(213, 117, 63, 0.7), 0px 5px 20px 0px rgba(0, 0, 0, 0.25))
