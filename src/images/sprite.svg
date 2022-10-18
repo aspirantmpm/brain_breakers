@@ -20,10 +20,10 @@
     </symbol>
     <symbol id="fb" viewBox="0 0 16 32">
       <path d="M14.143 15.972h-4.034v14.865H3.997V15.972H1.09v-5.224h2.907V7.367c0-2.418 1.142-6.203 6.166-6.203l4.527.019v5.071h-3.285c-.539 0-1.296.271-1.296 1.424v3.075h4.567l-.534 5.219z"/>
-    </symbol>
+    </symbol>  
     <symbol id="button_arrow" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="5.333" d="M10.667 5.333 23.867 16l-13.2 10.667"/>
-    </symbol>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.196 10.667-13.196 10.667"></path>
+</symbol>    
     <symbol id="burger" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-width="2" d="M6 10h20M6 16h20M6 22h20"/>
     </symbol>
