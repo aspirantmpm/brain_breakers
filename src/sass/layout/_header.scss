@@ -1,82 +1,47 @@
-.logo {  
-  width: 48px;
-  height: 44px;
-  @media screen and (max-width: 767px) {
-       width: 40px;
-  height: 37px; 
-  }
-  @media screen and (min-width: 768px) {
-    width: 48px;
-  height: 44px;
-  }  
-}
-
-.header {  
-  position: absolute;  
+.header {
+  height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  @media screen and (max-width: 767px) {
-    height: 61px;    
-      }
-  @media screen and (min-width: 768px) {
-    height: 90px; 
-  }
-  @media screen and (min-width: 1200px) {
-    height: 98px; 
-  }
+  position: fixed;
 }
 
-.header-nav {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  @media screen and (min-width: 768px) {
-    gap: 16px;
-  }
-  @media screen and (min-width: 1200px) {
-    gap: 30px;
-  }
-}
-
-.header-link {
-  text-decoration: none;
+.header__buy-now {
   font-weight: 600;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.1em;
-  color: $main-txt-cl;
+  font-size: 14px;
+  line-height: 1.22;
+
   display: flex;
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: $anim;
-}
+  align-items: center;
+  gap: 8px;
 
-.header-link:hover,
-.header-link:focus {
-  color: $yellow-txt-cl;
-}
+  cursor: pointer;
 
-.button_arrow {
-    width: 6px;
-  height: 6px;
-}
+  padding: 12px 34px;
+  margin: 0 auto;
 
-.btn-light__header {
-  @extend .header__btn;
-  @extend .btn;
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 45px;
-  }
-  display: flex;
-}
+  border: none;
+  border-radius: 10px;
+  background-color: $yellow-btn-bg;
 
-@media screen and (max-width: 767px) {
-  .header-nav,
-  .header-link,
-  .header__btn {
+  @media screen and (max-width: 767px) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $green-btn-bg;
+  }
+  &:focus {
+    color: $white-btn-cl;
+    stroke: currentColor;
+  }
+
+  &:disabled {
+    background-color: $grey-btn-bg;
+  }
+}
+
+.header__buy-arrow {
+  fill: none;
+  stroke: currentColor;
 }
