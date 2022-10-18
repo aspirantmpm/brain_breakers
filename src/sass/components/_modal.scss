@@ -212,6 +212,10 @@
 
 .modal-form {
   margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
 }
 
 .modal-form__label {
@@ -220,25 +224,13 @@
   color: $accent-txt-cl;
   line-height: calc(17 / 12);
   padding-left: 12px;
-  color: $accent-txt-cl;
-  transform: translateY(-25px);
-  transform-origin: left top;
-  cursor: text;
-  transition: all 0.3s;
   display: block;
+  margin-bottom: 12px;
 
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: calc(20 / 14);
-    transform: translateY(-32px);
-  }
-}
-
-.modal-form__label--comment {
-  transform: translateY(-60px);
-
-  @media screen and (min-width: $tablet) {
-    transform: translateY(-80px);
+    margin-bottom: 16px;
   }
 }
 
@@ -247,13 +239,26 @@
   padding: 8px;
   width: 100%;
   padding: 0 12px;
-
   border: 1px solid $dark-green-bg;
   border-radius: 10px;
   background: $input-bg;
 
   @media screen and (min-width: $tablet) {
     height: 42px;
+  }
+}
+
+.modal-form__input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  color: $accent-txt-cl;
+  line-height: calc(17 / 12);
+  color: $accent-txt-cl;
+  font-size: 14px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: calc(20 / 14);
   }
 }
 
@@ -274,29 +279,8 @@
   margin-right: auto;
 }
 
-.modal-form__field {
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 0 auto;
-}
-
-.modal-form__input:focus + .modal-form__label,
-.modal-form__input:not(:placeholder-shown) + .modal-form__label {
-  padding: 0;
-  color: $accent-txt-cl;
-  transform: translateY(-45px) scale(0.8);
-
+.modal__title--franshise {
   @media screen and (min-width: $tablet) {
-    transform: translateY(-55px) scale(0.8);
-  }
-}
-.modal-form__input:focus + .modal-form__label--comment,
-.modal-form__input:not(:placeholder-shown) + .modal-form__label--comment {
-  padding: 0;
-  color: $accent-txt-cl;
-  transform: translateY(-80px) scale(0.8);
-
-  @media screen and (min-width: $tablet) {
-    transform: translateY(-100px) scale(0.8);
+    width: 322px;
   }
 }

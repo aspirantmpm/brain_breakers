@@ -121,7 +121,7 @@
     </svg>
   </button>
 
-  <p class="modal__title">
+  <p class="modal__title modal__title--franshise">
     Thank you for your interest in owning an Ice Cream shop
   </p>
   <p class="modal__text">
@@ -133,45 +133,41 @@
   </p>
 
   <form class="modal-form">
-    <input
-      id="name-field"
-      name="name"
-      type="text"
-      class="modal-form__input"
-      placeholder=" "
-      pattern="[a-z]"
-    /><label for="name-field" class="modal-form__label">Name</label>
+    <label class="modal-form__label"
+      ><input
+        name="name"
+        type="text"
+        class="modal-form__input"
+        placeholder="Name"
+        pattern="[a-z]"
+    /></label>
 
-    <input
-      id="phone-field"
-      name="phone"
-      type="tel"
-      class="modal-form__input"
-      placeholder=" "
-      pattern="[0-9]{9}"
-    />
-    <label for="phone-field" class="modal-form__label">Phone</label>
+    <label for="phone-field" class="modal-form__label"
+      ><input
+        name="phone"
+        type="tel"
+        class="modal-form__input"
+        placeholder="Phone"
+        pattern="[0-9]{9}"
+      />
+    </label>
 
-    <input
-      id="email-field"
-      name="email"
-      type="email"
-      class="modal-form__input"
-      placeholder=" "
-      pattern=".+@\."
-    /><label for="email-field" class="modal-form__label">Email</label>
+    <label class="modal-form__label"
+      ><input
+        name="email"
+        type="email"
+        class="modal-form__input"
+        placeholder="Email"
+        pattern=".+@\."
+    /></label>
 
-    <textarea
-      id="comment-field"
-      rows="4"
-      class="modal-form__input modal-form__input--textarea"
-      placeholder=" "
-    ></textarea>
-    <label
-      for="comment-field"
-      class="modal-form__label modal-form__label--comment"
-      >Comment</label
-    >
+    <label class="modal-form__label modal-form__label--comment">
+      <textarea
+        rows="4"
+        class="modal-form__input modal-form__input--textarea"
+        placeholder="Comment"
+      ></textarea>
+    </label>
 
     <button class="btn submit__btn" type="submit">Submit</button>
   </form>
