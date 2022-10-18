@@ -1,5 +1,3 @@
-
-
 .hero {
     color: $main-txt-cl;
     background-color: $dark-green-bg;
@@ -43,6 +41,7 @@
     margin-top: 32px;
 }
 
+
 .hero__icecream {
     position: absolute;
     margin-left: auto;
@@ -50,7 +49,14 @@
     left: 0;
     right: 0;
     text-align: center;
-    bottom: -57px;   
+    bottom: -53px;
+    
+    @media screen and (max-width: 767px) {
+        & img {   
+            margin-left: auto;
+            margin-right: auto; 
+        }  
+    }
 }
 
 .hero__plate {
@@ -61,9 +67,13 @@
     display: none;
 }
 
+.branches {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .hero .container {
-        padding: 32px 400px 20px 32px;
+        padding: 32px 400px 14px 32px;
         background-image: url(/src/images/tablet/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
@@ -99,8 +109,8 @@
     }
 
     .hero__icecream {
-        bottom: -17%;
-        left: 45%;
+        bottom: -56px;
+        left: 47%;
     }
 
     .hero__plate {
@@ -112,38 +122,51 @@
     }
 
     .hero__arrow {
-        margin-top: 10px;
+        margin-top: 8px;
+        margin-left: 20px;
         padding: 0;
         border: none;
         fill: $white-btn-cl;
         background-color: transparent;
-
-        .hero__arrow--focus {
-            display: none;
-        }
-
-        .hero__arrow--hover {
-            display: none;
-        }
-
-        &:hover .hero__arrow--hover {
-            display: block;
-        }
-
-        &:hover .hero__arrow--normal, 
-        &:focus-within .hero__arrow--normal {
-            display: none;
-        }
-
-        &:focus-within .hero__arrow--focus {
-            display: block;
-        }
+        transform: translateX(-50%);
     }
+
+
+    .branches {
+        display: block;
+        position: absolute;
+        top: 22px;
+        right: 32px;
+        text-align: end;
+    }
+
+    .branches__number{
+        display: block;
+        margin-bottom: 4px;
+
+        color: $accent-txt-cl;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 1.21;
+        letter-spacing: 00.04em;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+
+    }
+
+    .branches__text {
+        font-size: 8px;
+        line-height: 1.25;
+    }
+
+
 }
 
 @media screen and (min-width: 1200px) {
     .hero .container {
-        padding: 44px 744px 100px 16px;
+        padding: 44px 744px 96px 16px;
         background-image: url(/src/images/desktop/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
@@ -183,6 +206,72 @@
     }
 
     .hero__arrow {
-        margin-top: 18px;
+        margin-top: 12px;
     }
+
+    .branches {
+        top: 52px;
+        right: 16px;
+        text-align: end;
+    }
+
+    .branches__number {
+        font-size: 46px;
+
+        &:not(:first-child) {
+            margin-top: 16px;
+        }
+    }
+
+    .branches__text{
+        font-size: 14px;
+    }
+}
+
+.arrow {
+    display: block;
+    height: 100%;
+
+    .hero__arrow:hover &,
+    .hero__arrow:focus &,
+    .hero__arrow:active & {
+        display: none;
+    }
+}
+
+.arrow_hover {
+    display: none;
+    height: 100%;
+
+    .hero__arrow:hover & {
+        display: block;
+    }
+
+    .hero__arrow:active & {
+        display: none;
+    }
+
+    .hero__arrow:focus & {
+        display: none;
+
+    }
+
+}
+
+.arrow_focus {
+    display: none;
+    height: 100%;
+
+    .hero__arrow:focus & {
+        display: block;
+
+    }
+
+}
+
+.hero__arrow:hover,
+.hero__arrow:focus {
+    cursor: pointer;
+    width: 50px;
+    outline: none;
 }
