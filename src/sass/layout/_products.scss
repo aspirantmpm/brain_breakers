@@ -84,43 +84,56 @@
     z-index: 2;
 }
 
-
+.products__label{
+    display: flex;
+    justify-content: center;
+}
 .section__products {
-    background-image: url(../images/mobile/fon1.jpg), url(../images/mobile/fon2.jpg), url(../images/mobile/fon3.jpg);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: top, center, bottom;
     padding-top: 60px;
     padding-bottom: 60px;
+    background-position: center;
 
-    @media screen and (min-width:321px) {
-        background-image: url(../images/tablet/iceCreamFon2@1x.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/tablet/iceCreamFon2@2x.png);
-        }
-    }
-
-    @media screen and (min-width:769px) {
-        background-image: url(../images/desktop/IceCreamFon2@1x.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/desktop/IceCreamFon2@2x.png);
-        }
-    }
-
-    @media screen and (min-width:1201px) {
-        background-image: url(../images/extraLarge/IceCreamFon2@1x.png);
+     background-image: url(../images/extraLarge/IceCreamFon2@1x.png);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url(../images/extraLarge/IceCreamFon2@2x.png);
         }
-    }
+    // background-image: url(../images/mobile/fon1.jpg), url(../images/mobile/fon2.jpg), url(../images/mobile/fon3.jpg);
+    // background-repeat: no-repeat, no-repeat, no-repeat;
+    // background-position: top, center, bottom;
+   
+
+    // @media screen and (min-width:321px) {
+    //     background-image: url(../images/tablet/iceCreamFon2@1x.png);
+
+    //     @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //         background-image: url(../images/tablet/iceCreamFon2@2x.png);
+    //     }
+    // }
+
+    // @media screen and (min-width:769px) {
+    //     background-image: url(../images/desktop/IceCreamFon2@1x.png);
+
+    //     @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //         background-image: url(../images/desktop/IceCreamFon2@2x.png);
+    //     }
+    // }
+
+    // @media screen and (min-width:1201px) {
+    //     background-image: url(../images/extraLarge/IceCreamFon2@1x.png);
+
+    //     @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //         background-image: url(../images/extraLarge/IceCreamFon2@2x.png);
+    //     }
+    // }
 }
 
 .section__title--center {
@@ -314,9 +327,6 @@
     }
 }
 
-.more_about_products:active{
-    background-color: #EFD478;
-}
 .arrow_hover {
     display: none;
     height: 100%;
@@ -327,6 +337,11 @@
     .more_about_products:active &
     {
         display: none;
+    }
+    .more_about_products:focus &
+    {
+        display: none;
+
     }
 
 }
@@ -345,4 +360,5 @@
 .more_about_products:focus {
     cursor: pointer;
     width: 50px;
+    outline: none;
 }
