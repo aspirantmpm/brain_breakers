@@ -86,6 +86,7 @@
     >Open map</a
   >
 </div>
+
 <!-- Read more modal -->
 
 <div class="modal js-modal" data-modal="read-more-modal">
@@ -171,4 +172,73 @@
 
     <button class="btn submit__btn" type="submit">Submit</button>
   </form>
+</div>
+
+<!-- ingredients modal -->
+
+<div class="modal modal--ingredients js-modal" data-modal="ingredients-modal">
+  <button class="modal__btn modal__btn--ingredients js-modal-close"></button>
+  <p class="modal__title modal__title--ingredients">Chololate icecream</p>
+
+  <div class="modal-ingredients-img-wrap">
+    <picture>
+      <source
+        srcset="
+          ./images/modal/ingredients@1x.png 1x,
+          ./images/modal/ingredients@2x.png 2x
+        "
+      />
+      <img alt="ice cream illustration" width="131" height="131" />
+    </picture>
+  </div>
+
+  <ul class="modal-ingredients-desc">
+    <li class="modal-ingredients-desc__item">
+      <p class="modal-ingredients-desc__text-val">320</p>
+      <p class="modal-ingredients-desc__text-desc">kcal</p>
+    </li>
+    <li class="modal-ingredients-desc__item">
+      <p class="modal-ingredients-desc__text-val">4g</p>
+      <p class="modal-ingredients-desc__text-desc">Prote...</p>
+    </li>
+    <li class="modal-ingredients-desc__item">
+      <p class="modal-ingredients-desc__text-val">8,2g</p>
+      <p class="modal-ingredients-desc__text-desc">Fats</p>
+    </li>
+    <li class="modal-ingredients-desc__item">
+      <p class="modal-ingredients-desc__text-val">40,4g</p>
+      <p class="modal-ingredients-desc__text-desc">Carbs</p>
+    </li>
+  </ul>
+
+  <p class="modal-ingredients-title">Ingredients</p>
+
+  <ul class="modal-ingtedients">
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Milk</p>
+      <p class="modal-ingredients__values">100ml</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Belgian chocolate</p>
+      <p class="modal-ingredients__values">20g</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Cream</p>
+      <p class="modal-ingredients__values">150 ml</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Cocoa powder</p>
+      <p class="modal-ingredients__values">30g</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Sugar</p>
+      <p class="modal-ingredients__values">40g</p>
+    </li>
+    <li class="modal-ingredients__item">
+      <p class="modal-ingredients__values">Vanilla sugar</p>
+      <p class="modal-ingredients__values">10g</p>
+    </li>
+  </ul>
+
+  <button class="modal-ingredients-btn" type="submit">Submit</button>
 </div>
