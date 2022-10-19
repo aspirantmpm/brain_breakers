@@ -1,18 +1,31 @@
+.contacts {
+    background-color: $dark-green-bg;
+}
+
 .address {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.address__tittle {
-    border-radius: 4px;
-    background-color: $yellow-txt-cl;
     color: $accent-txt-cl;
     font-weight: 500;
     letter-spacing: 0.04em;
     font-size: 12px;
     font-family: $main-font;
-    line-height: calc(23 / 12);
+    line-height: calc(22 / 12);
+    align-items: center;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        font-size: 14px;
+        line-height: calc(26 / 14);
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+    }
 
 }
 
@@ -23,4 +36,180 @@
     padding: 40px 32px;
     width: 280px;
     height: 412px;
+
+    @media screen and (min-width: $tablet) {
+        width: 224px;
+        height: 528px;
+        padding: 40px 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 368px;
+        height: 538px;
+        padding: 40px 40px;
+    }
+
+
+}
+
+
+
+.address__box {
+    background-color: $yellow-txt-cl;
+    border-radius: 4px;
+    width: 80px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 0px;
+
+    @media screen and (min-width: $tablet) {
+        width: 73px;
+        height: 28px;
+        margin-bottom: 32px;
+    }
+
+
+
+    .address__tittle {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(22 / 12);
+        letter-spacing: 0.04em;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+            line-height: calc(30 / 16);
+        }
+
+    }
+}
+
+.address__box--width {
+    width: 130px;
+
+    @media screen and (min-width: $tablet) {
+        width: 138px;
+    }
+}
+
+.address__container {
+    margin-bottom: 48px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 64px;
+    }
+
+    &::after {
+        content: "";
+        width: 216px;
+        display: block;
+        height: 0.5px;
+        position: relative;
+        bottom: -24px;
+        background-color: #E1E1E1;
+
+        @media screen and (min-width: $tablet) {
+            width: 176px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 288px;
+        }
+    }
+
+    .article__name {
+        margin-bottom: 8px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+    }
+
+    .address__link {
+        color: $brown-txt-cl;
+        text-decoration: none;
+        transition: text-decoration $anim;
+        letter-spacing: 0.04em;
+
+        &:hover {
+            text-decoration: underline;
+
+
+        }
+
+    }
+}
+
+
+.article__box {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 12px;
+    }
+}
+
+.article__group {
+    margin-bottom: 48px;
+
+    &::after {
+        content: "";
+        width: 216px;
+        display: block;
+        height: 0.5px;
+        position: relative;
+        bottom: -24px;
+        background-color: #E1E1E1;
+
+        @media screen and (min-width: $tablet) {
+            width: 176px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 288px;
+        }
+    }
+}
+
+.article__item {
+    color: $grey-btn-bg;
+}
+
+.main__link {
+    color: $black-btn-cl;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.box__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    .contacts__btn {
+        width: 196px;
+
+        &--transparent {
+            padding: 12px 46px;
+            background-color: transparent;
+            border: 2px solid $yellow-btn-br;
+
+            &:hover,
+            &:focus {
+                background-color: transparent;
+                border-color: $green-btn-br;
+            }
+
+            &:disabled {
+                border-color: $grey-btn-br;
+            }
+        }
+
+        transition: border $anim,
+        background-color $anim;
+    }
+
+
 }
