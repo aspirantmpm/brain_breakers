@@ -29,6 +29,10 @@
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
+
+    & span {
+        display: block;
+    }
 }
 
 
@@ -49,7 +53,12 @@
     left: 0;
     right: 0;
     text-align: center;
-     bottom: -53px;
+    bottom: -53px;
+    pointer-events: none;
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
     
     @media screen and (max-width: 767px) {
         & img {   
@@ -57,17 +66,7 @@
             margin-right: auto; 
         }  
     }
-     /*   
-    transform: scale(0.5), scale(1);
-    transition: transform $anim;*/
 
-}
-
-.hero__icecream {
-    animation-name: bounce;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
 }
 
 @keyframes bounce {
@@ -140,7 +139,6 @@
     .hero__icecream {
         bottom: -56px;
         left: 47%;
-        pointer-events: none;
 
         @keyframes bounce {
                 0% {
