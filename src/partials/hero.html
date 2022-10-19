@@ -1,10 +1,10 @@
-<section class="hero">
+<section class="hero" id="hero">
                 <div class="container">
-                    <h1 class="hero__title"><span class="hero__title--first-line">ice cream</span></br><span class="hero__title--second-line">made with</span></br><span class="hero__title--third-line">passion</span></h1>
-                    <button type="button" class="hero__product" id="products">Products</button>
-                    <button type="button" class="hero__modal-video" id="about">
-                    How it’s made?
-                    </button>
+                    <h1 class="hero__title">ice cream</br>made with</br><span class="hero__title--third-line">passion</span></h1>
+                   <div class="hero__buttons">
+					<a class="hero__btn btn" href="#products">Products</button>
+                    <a class="hero__btn-link" href="#about">How it’s made?</a>
+				   </div>
                     <div class="hero__icecream">
                         <picture>
 								<source
@@ -18,11 +18,12 @@
 								/>
 								<source
 									srcset="/src/images/mobile/hero@1x.png 1x, /src/images/mobile/hero@2x.png 2x"
-									media="(min-width: 320px)"
+									media="(max-width: 767px)"
 								/>
 								<img src="/src/images/mobile/hero@1x.png" alt="smiling ice cream" width="pixel" />
 							</picture>
                         </div>
+						
                     <div class="hero__plate">
                        <picture>
 								<source
@@ -39,8 +40,25 @@
                     </div>
                     <div class="hero__text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                        <svg><use></use></svg>
+                       
+						<button class="hero__arrow js-modal-open" data-modal="read-more-modal" type="button">
+                         <svg class="arrow" width="40" height="25">
+                            <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                        <svg class="arrow_hover" width="50" height="25">
+                            <use href="./images/sprite.svg#arrow_hover"></use>
+                        </svg>
+                        <svg class="arrow_focus" width="50" height="25">
+                            <use href="./images/sprite.svg#arrow_focus"></use>
+                        </svg>
+                    </button>
 
                     </div>
+					<aside class="branches">
+						<span class="branches__number">16</span>
+						<p class="branches__text">cafes</p>
+						<span class="branches__number">23</span>
+						<p class="branches__text">food trucks</p>
+					</aside>
                 </div>
                 </section>

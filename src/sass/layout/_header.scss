@@ -1,0 +1,71 @@
+.header {
+  background-color: $dark-green-bg;
+}
+
+.header-content {
+  @extend .container;
+  display: flex;
+  align-items: center;
+  height: 98px;
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.header-nav {
+  display: flex;
+  gap: 27px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.header-nav__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  text-decoration: none;
+  color: $main-txt-cl;
+  text-decoration: none;
+  transition: $anim;
+
+  &:hover,
+  &:focus {
+    color: $yellow-txt-cl;
+  }
+}
+
+.header-buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 32px;
+  align-items: center;
+}
+
+.header-buttons__menu {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.icon-menu {
+  fill: $white-bg;
+}
+
+.header-buttons__modal {
+  @extend .btn;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__buy-arrow {
+  fill: none;
+  stroke: currentColor;
+}
