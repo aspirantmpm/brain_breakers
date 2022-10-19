@@ -239,6 +239,12 @@
     margin-right: auto;
     width: 368px;
   }
+
+  &:invalid {
+    .submit__btn {
+        background-color: $grey-btn-cl;
+    }
+  }
 }
 
 .modal-form__label {
@@ -257,6 +263,12 @@
 
   &--ingredients {
     margin-bottom: 16px;
+  }
+
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    border-color: red;
   }
 }
 
@@ -431,7 +443,7 @@
   margin-bottom: 24px;
 }
 
-.modal-ingtedients {
+.modal-ingredients {
   margin-bottom: 48px;
 }
 
