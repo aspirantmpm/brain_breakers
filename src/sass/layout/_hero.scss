@@ -57,8 +57,36 @@
             margin-right: auto; 
         }  
     }
+     /*   
+    transform: scale(0.5), scale(1);
+    transition: transform $anim;*/
 
 }
+
+.hero__icecream {
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 0px;
+        scale: 0.5;
+    }
+
+    50% {
+        bottom: -25px;
+        scale: 0.75;
+    }
+
+    100% {
+        bottom: -53px;
+        scale: 1;
+    }
+}
+
 
 .hero__plate {
     display: none;
@@ -113,6 +141,23 @@
         bottom: -56px;
         left: 47%;
         pointer-events: none;
+
+        @keyframes bounce {
+                0% {
+                    bottom: 0px;
+                    scale: 0.5;
+                }
+        
+                50% {
+                    bottom: -25px;
+                    scale: 0.75;
+                }
+        
+                100% {
+                    bottom: -56px;
+                    scale: 1;
+                }
+            }
     }
 
     .hero__plate {
@@ -121,6 +166,27 @@
         left: 32px;
         bottom: 10px;
 
+        animation-name: plate;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+
+        @keyframes plate {
+                0% {
+                    left: -100px;
+                    scale: 0.5;
+                }
+        
+                50% {
+                    left: -32;
+                    scale: 0.75;
+                }
+        
+                100% {
+                   left: 32px;
+                   scale: 1;
+                }
+            }
     }
 
     .hero__arrow {
@@ -187,11 +253,47 @@
     .hero__icecream {
         bottom: -17%;
         right: 0;
+
+        @keyframes bounce {
+                0% {
+                    bottom: 0px;
+                    scale: 0.5;
+                }
+        
+                50% {
+                    bottom: -25px;
+                    scale: 0.75;
+                }
+        
+                100% {
+                    bottom: -100px;
+                    scale: 1;
+                }
+            }
+    
+    
     }
 
     .hero__plate {
         left: 17px;
         bottom: 65px;
+
+        @keyframes plate {
+                0% {
+                    left: -100px;
+                    scale: 0.5;
+                }
+        
+                50% {
+                    left: -32;
+                    scale: 0.75;
+                }
+        
+                100% {
+                    left: 17px;
+                    scale: 1;
+                }
+            }
 
     }
 
