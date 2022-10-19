@@ -1,9 +1,10 @@
 .section-address {
     position: relative;
+    background-color: $dark-green-bg;
 }
 
 .container__address {
-    position: relative;
+    position: absolute;
     top: -345px;
     left: 0;
     right: 0;
