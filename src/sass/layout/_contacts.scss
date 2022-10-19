@@ -1,6 +1,20 @@
-.contacts {
-    background-image: url();
+.section__address {
+    position: relative;
+}
 
+.container__address {
+    position: absolute;
+    top: -345px;
+    left: 0;
+    right: 0;
+
+    @media screen and (min-width: $tablet) {
+        top: -304px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: -96px;
+    }
 }
 
 .address {
@@ -15,6 +29,7 @@
     line-height: calc(22 / 12);
     align-items: center;
     margin-bottom: 32px;
+    justify-content: center;
 
     @media screen and (min-width: $tablet) {
         flex-direction: row;
@@ -50,11 +65,7 @@
         height: 538px;
         padding: 40px 40px;
     }
-
-
 }
-
-
 
 .address__box {
     background-color: $yellow-txt-cl;
@@ -72,8 +83,6 @@
         height: 28px;
         margin-bottom: 32px;
     }
-
-
 
     .address__tittle {
         font-weight: 500;
@@ -197,11 +206,11 @@
     }
 
     .contacts__btn {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: calc(18 / 14);
-        text-align: center;
-
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        stroke: currentcolor;
+        Fill: none;
     }
 }
 

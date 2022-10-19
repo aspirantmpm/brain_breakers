@@ -1,5 +1,5 @@
-<section class="contacts">
-  <div class="container">
+<section class="container section__address">
+  <div class="container__address" id="#contacts">
     <h2 class="visually-hidden">Our contacts</h2>
     <ul class="address">
       <li class="address__item">
@@ -118,8 +118,21 @@
       </li>
     </ul>
     <div class="box__btn">
-      <button class="contacts__btn" type="button">Our Locations</button>
-      <button class="contacts__btn" type="button">Franchise</button>
+      <button class="btn contacts__btn" type="button">
+        Our Locations
+        <svg class="about__arrow" width="12" height="12">
+          <use href="./images/sprite.svg#button_arrow"></use>
+        </svg>
+      </button>
+      <button
+        class="btn contacts__btn contacts__btn--transparent"
+        type="button"
+      >
+        Franchise
+        <svg class="about__arrow" width="12" height="12">
+          <use href="./images/sprite.svg#button_arrow"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
