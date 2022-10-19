@@ -5,7 +5,7 @@ $(".opacity").slick({
   slidesToShow: 1,
   autoplay: true,
   centerMode: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   draggable: false,
 });
 
