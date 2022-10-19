@@ -2,21 +2,111 @@
   <div class="container gallery__container">
     <h2 class="visually-hidden">Gallery</h2>
     <div class="gallery__wrapper opacity">
-      <img
-        class="gallery__img"
-        src="./images/desktop/StudioFoto1@1x.jpg"
-        alt=""
-      />
-      <img
-        class="gallery__img"
-        src="./images/desktop/studioFoto2@1x.jpg"
-        alt=""
-      />
-      <img
-        class="gallery__img"
-        src="./images/desktop/studioFoto3@1x.jpg"
-        alt=""
-      />
+      
+      <picture class="gallery__card">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/desktop/studiofoto1@1x.jpg 1x,
+            ./images/desktop/studiofoto1@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(min-width: 481px)"
+          srcset="
+            ./images/tablet/studiofoto1@1x.jpg 1x,
+            ./images/tablet/studiofoto1@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(max-width: 480px)"
+          srcset="
+            ./images/mobile/studiofoto1@1x.jpg 1x,
+            ./images/mobile/studiofoto1@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <img
+          class="gallery__img"
+          src="./images/mobile/studiofoto1@1x.jpg"
+          alt="studiofoto1"
+        />
+      </picture>
+
+      <picture class="gallery__card">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/desktop/studiofoto2@1x.jpg 1x,
+            ./images/desktop/studiofoto2@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(min-width: 481px)"
+          srcset="
+            ./images/tablet/studiofoto2@1x.jpg 1x,
+            ./images/tablet/studiofoto2@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(max-width: 480px)"
+          srcset="
+            ./images/mobile/studiofoto2@1x.jpg 1x,
+            ./images/mobile/studiofoto2@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <img
+          class="gallery__img"
+          src="./images/mobile/studiofoto2@1x.jpg"
+          alt="studiofoto2"
+        />
+      </picture>
+
+      <picture class="gallery__card">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/desktop/studiofoto3@1x.jpg 1x,
+            ./images/desktop/studiofoto3@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(min-width: 481px)"
+          srcset="
+            ./images/tablet/studiofoto3@1x.jpg 1x,
+            ./images/tablet/studiofoto3@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(max-width: 480px)"
+          srcset="
+            ./images/mobile/studiofoto3@1x.jpg 1x,
+            ./images/mobile/studiofoto3@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <img
+          class="gallery__img"
+          src="./images/mobile/studiofoto3@1x.jpg"
+          alt="studiofoto3"
+        />
+      </picture>
     </div>
   </div>
 </section>
