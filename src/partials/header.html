@@ -23,16 +23,16 @@
     <nav class="header-menu">
       <ul class="header-nav">
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">Home</a>
+          <a class="header-nav__link" href="#">Home</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">How it’s made?</a>
+          <a class="header-nav__link" href="#about">How it’s made?</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">Our products</a>
+          <a class="header-nav__link" href="#products">Our products</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">Contact</a>
+          <a class="header-nav__link" href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
@@ -45,11 +45,14 @@
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <svg  width="32px" height="32px" aria-label="Перемикач мобільного меню">
+        <svg width="32px" height="32px" aria-label="Перемикач мобільного меню">
           <use class="icon-menu" href="./images/sprite.svg#github"></use>
         </svg>
       </button>
-      <button class="header-buttons__modal js-modal-open" data-modal="location-modal">
+      <button
+        class="header-buttons__modal js-modal-open"
+        data-modal="location-modal"
+      >
         <span>Buy now</span>
         <svg class="header__buy-arrow" width="12" height="12">
           <use href="./images/sprite.svg#button_arrow"></use>
