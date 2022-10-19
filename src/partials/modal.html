@@ -177,7 +177,12 @@
 <!-- ingredients modal -->
 
 <div class="modal modal--ingredients js-modal" data-modal="ingredients-modal">
-  <button class="modal__btn modal__btn--ingredients js-modal-close"></button>
+  <button class="modal__btn modal__btn--ingredients js-modal-close">
+    <svg class="modal__close" width="16" height="16">
+      <use href="./images/sprite.svg#close-line"></use>
+    </svg>
+  </button>
+
   <p class="modal__title modal__title--ingredients">Chololate icecream</p>
 
   <div class="modal-ingredients-img-wrap">
@@ -240,5 +245,163 @@
     </li>
   </ul>
 
-  <button class="modal-ingredients-btn" type="submit">Submit</button>
+  <form class="modal-form">
+    <label class="modal-form__label modal-form__label--ingredients"
+      ><input
+        name="name"
+        type="text"
+        class="modal-form__input modal-form__input--ingredients"
+        placeholder="Name"
+        pattern="[a-z]"
+    /></label>
+
+    <label
+      for="phone-field"
+      class="modal-form__label modal-form__label--ingredients"
+      ><input
+        name="phone"
+        type="tel"
+        class="modal-form__input modal-form__input--ingredients"
+        placeholder="Phone"
+        pattern="[0-9]{9}"
+      />
+    </label>
+
+    <label class="modal-form__label modal-form__label--comment">
+      <textarea
+        rows="4"
+        class="modal-form__input modal-form__input--textarea modal-form__input--textarea-ingredients"
+        placeholder="Comment"
+      ></textarea>
+    </label>
+
+    <button class="btn submit__btn" type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- buy now modal -->
+
+<div class="modal modal--buy-now js-modal" data-modal="buy-now-modal">
+  <button class="modal__btn js-modal-close">
+    <svg class="modal__close" width="16" height="16">
+      <use href="./images/sprite.svg#close-line"></use>
+    </svg>
+  </button>
+
+  <p class="modal__title modal__title--buy-now">Buy now</p>
+
+  <ul class="modal-buy-now">
+    <li class="modal-buy-now__item">
+      <div class="modal-buy-now__img-wrapper">
+        <picture>
+          <source
+            srcset="
+              ./images/modal/product1@1x.png 1x,
+              ./images/modal/product1@2x.png 2x
+            "
+          />
+          <img
+            class="modal-buy-now__img"
+            src="./images/modal/product1@2x.png"
+            alt="ice cream"
+            width="131"
+            height="131"
+          />
+        </picture>
+      </div>
+      <label class="modal-buy-now__label" for="ice-cream"></label>
+      <input
+        class="modal-buy-now__checkbox"
+        id="ice-cream"
+        name="ice-cream"
+        type="checkbox"
+      />
+      <button class="modal-buy-now__btn">ice cream</button>
+    </li>
+    <li class="modal-buy-now__item">
+      <div class="modal-buy-now__img-wrapper">
+        <picture>
+          <source
+            srcset="
+              ./images/modal/product2@1x.png 1x,
+              ./images/modal/product2@2x.png 2x
+            "
+          />
+          <img
+            class="modal-buy-now__img"
+            src="./images/modal/product2@2x.png"
+            alt="cup of coffee"
+            width="131"
+            height="131"
+          />
+        </picture>
+      </div>
+      <label class="modal-buy-now__label" for="coffee"></label>
+      <input
+        class="modal-buy-now__checkbox"
+        id="coffee"
+        name="coffee"
+        type="checkbox"
+      />
+      <button class="modal-buy-now__btn">ice coffee</button>
+    </li>
+    <li class="modal-buy-now__item">
+      <div class="modal-buy-now__img-wrapper">
+        <picture>
+          <source
+            srcset="
+              ./images/modal/product3@1x.png 1x,
+              ./images/modal/product3@2x.png 2x
+            "
+          />
+          <img
+            class="modal-buy-now__img"
+            src="./images/modal/product3@2x.png"
+            alt="milkshake"
+            width="131"
+            height="131"
+          />
+        </picture>
+      </div>
+      <label class="modal-buy-now__label" for="milkshake"></label>
+      <input
+        class="modal-buy-now__checkbox"
+        id="milkshake"
+        name="milkshake"
+        type="checkbox"
+      />
+      <button class="modal-buy-now__btn">milkshake</button>
+    </li>
+  </ul>
+
+  <form class="modal-form">
+    <label class="modal-form__label"
+      ><input
+        name="name"
+        type="text"
+        class="modal-form__input"
+        placeholder="Name"
+        pattern="[a-z]"
+    /></label>
+
+    <label for="phone-field" class="modal-form__label"
+      ><input
+        name="phone"
+        type="tel"
+        class="modal-form__input"
+        placeholder="Phone"
+        pattern="[0-9]{9}"
+      />
+    </label>
+
+    <label class="modal-form__label modal-form__label--comment">
+      <textarea
+        rows="4"
+        class="modal-form__input modal-form__input--textarea"
+        placeholder="Comment"
+      ></textarea>
+    </label>
+
+    <button class="btn submit__btn" type="submit">Submit</button>
+  </form>
 </div>
