@@ -140,7 +140,7 @@
         type="text"
         class="modal-form__input"
         placeholder="Name"
-        pattern="[a-z]"
+        pattern="[A-Z][A-Za-z]{2,}"
     /></label>
 
     <label for="phone-field" class="modal-form__label"
@@ -149,7 +149,7 @@
         type="tel"
         class="modal-form__input"
         placeholder="Phone"
-        pattern="[0-9]{9}"
+        pattern="[0-9]{9,15}"
       />
     </label>
 
@@ -170,7 +170,7 @@
       ></textarea>
     </label>
 
-    <button class="btn submit__btn" type="submit">Submit</button>
+    <button class="btn submit__btn" type="submit" disabled>Submit</button>
   </form>
 </div>
 
@@ -252,7 +252,7 @@
         type="text"
         class="modal-form__input modal-form__input--ingredients"
         placeholder="Name"
-        pattern="[a-z]"
+        pattern="[A-Z][A-Za-z]{2,}"
     /></label>
 
     <label
@@ -263,7 +263,7 @@
         type="tel"
         class="modal-form__input modal-form__input--ingredients"
         placeholder="Phone"
-        pattern="[0-9]{9}"
+        pattern="[0-9]{9,14}"
       />
     </label>
 
@@ -275,7 +275,7 @@
       ></textarea>
     </label>
 
-    <button class="btn submit__btn" type="submit">Submit</button>
+    <button class="btn submit__btn" type="submit" disabled>Submit</button>
   </form>
 </div>
 
@@ -381,7 +381,7 @@
         type="text"
         class="modal-form__input"
         placeholder="Name"
-        pattern="[a-z]"
+        pattern="[A-Z][A-Za-z]{2,}"
     /></label>
 
     <label for="phone-field" class="modal-form__label"
@@ -390,7 +390,7 @@
         type="tel"
         class="modal-form__input"
         placeholder="Phone"
-        pattern="[0-9]{9}"
+        pattern="[0-9]{9,14}"
       />
     </label>
 
@@ -402,6 +402,6 @@
       ></textarea>
     </label>
 
-    <button class="btn submit__btn" type="submit">Submit</button>
+    <button class="btn submit__btn" type="submit" disabled>Submit</button>
   </form>
 </div>

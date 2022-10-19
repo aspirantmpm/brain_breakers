@@ -258,6 +258,12 @@
   &--ingredients {
     margin-bottom: 16px;
   }
+
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    border-color: red;
+  }
 }
 
 .modal-form__input {
@@ -431,7 +437,7 @@
   margin-bottom: 24px;
 }
 
-.modal-ingtedients {
+.modal-ingredients {
   margin-bottom: 48px;
 }
 
