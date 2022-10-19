@@ -1,64 +1,89 @@
 <section class="hero" id="hero">
-                <div class="container">
-                    <h1 class="hero__title"><span>ice cream</span><span>made with</span><span class="hero__title--third-line">passion</span></h1>
-                   <div class="hero__buttons">
-					<a class="hero__btn btn" href="#products">Products</button>
-                    <a class="hero__btn-link" href="#about">How it’s made?</a>
-				   </div>
-                    <div class="hero__icecream">
-                        <picture>
-								<source
-									srcset="/src/images/desktop/hero@1x.png 1x, /src/images/desktop/hero@2x.png 2x"
-									media="(min-width: 1200px)"
-                          
-								/>
-								<source
-									srcset="/src/images/tablet/hero@1x.png 1x, /src/images/tablet/hero@2x.png 2x"
-									media="(min-width: 768px)"
-								/>
-								<source
-									srcset="/src/images/mobile/hero@1x.png 1x, /src/images/mobile/hero@2x.png 2x"
-									media="(max-width: 767px)"
-								/>
-								<img src="/src/images/mobile/hero@1x.png" alt="smiling ice cream" width="pixel" />
-							</picture>
-                        </div>
-						
-                    <div class="hero__plate">
-                       <picture>
-								<source
-									srcset="/src/images/desktop/plate@1x.png 1x, /src/images/desktop/plate@2x.png 2x"
-									media="(min-width: 1200px)"
-                          
-								/>
-								<source
-									srcset="/src/images/tablet/plate@1x.png 1x, /src/images/tablet/plate@2x.png 2x"
-									media="(min-width: 768px)"
-								/>
-								<img src="/src/images/tablet/plate@1x.png" alt="round plate of icecream" width="pixel" />
-							</picture>
-                    </div>
-                    <div class="hero__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                       
-						<button class="hero__arrow js-modal-open" data-modal="read-more-modal" type="button">
-                         <svg class="arrow" width="40" height="25">
-                            <use href="./images/sprite.svg#arrow"></use>
-                        </svg>
-                        <svg class="arrow_hover" width="50" height="25">
-                            <use href="./images/sprite.svg#arrow_hover"></use>
-                        </svg>
-                        <svg class="arrow_focus" width="50" height="25">
-                            <use href="./images/sprite.svg#arrow_focus"></use>
-                        </svg>
-                    </button>
+  <div class="container">
+    <h1 class="hero__title">
+      <span>ice cream</span><span>made with</span
+      ><span class="hero__title--third-line">passion</span>
+    </h1>
+    <div class="hero__buttons">
+      <a class="hero__btn btn" href="#products">Products</a>
+      <a class="hero__btn-link" href="#about">How it’s made?</a>
+    </div>
+    <div class="hero__icecream">
+      <picture>
+        <source
+          srcset="
+            /src/images/desktop/hero@1x.png 1x,
+            /src/images/desktop/hero@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/tablet/hero@1x.png 1x,
+            /src/images/tablet/hero@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/mobile/hero@1x.png 1x,
+            /src/images/mobile/hero@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="/src/images/mobile/hero@1x.png" alt="smiling ice cream" />
+      </picture>
+    </div>
 
-                    </div>
-					<aside class="branches">
-						<span class="branches__number">16</span>
-						<p class="branches__text">cafes</p>
-						<span class="branches__number">23</span>
-						<p class="branches__text">food trucks</p>
-					</aside>
-                </div>
-                </section>
+    <div class="hero__plate">
+      <picture>
+        <source
+          srcset="
+            /src/images/desktop/plate@1x.png 1x,
+            /src/images/desktop/plate@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/tablet/plate@1x.png 1x,
+            /src/images/tablet/plate@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/src/images/tablet/plate@1x.png"
+          alt="round plate of icecream"
+        />
+      </picture>
+    </div>
+    <div class="hero__text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+
+      <button
+        class="hero__arrow js-modal-open"
+        data-modal="read-more-modal"
+        type="button"
+      >
+        <svg class="arrow" width="40" height="25">
+          <use href="./images/sprite.svg#arrow"></use>
+        </svg>
+        <svg class="arrow_hover" width="50" height="25">
+          <use href="./images/sprite.svg#arrow_hover"></use>
+        </svg>
+        <svg class="arrow_focus" width="50" height="25">
+          <use href="./images/sprite.svg#arrow_focus"></use>
+        </svg>
+      </button>
+    </div>
+    <aside class="branches">
+      <span class="branches__number">16</span>
+      <p class="branches__text">cafes</p>
+      <span class="branches__number">23</span>
+      <p class="branches__text">food trucks</p>
+    </aside>
+  </div>
+</section>
