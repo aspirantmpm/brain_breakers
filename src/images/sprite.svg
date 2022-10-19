@@ -24,9 +24,9 @@
     <symbol id="button_arrow" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="5.333" d="M10.667 5.333 23.867 16l-13.2 10.667"/>
     </symbol>
-    <symbol id="burger" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-width="2" d="M6 10h20M6 16h20M6 22h20"/>
-    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 32 32">
+      <path d="M6.4 11.733V9.6h19.2v2.133H6.4zm0 5.334h19.2v-2.133H6.4v2.133zm0 5.333h19.2v-2.133H6.4V22.4z"/>
+    </symbol>    
     <symbol id="close-line" viewBox="0 0 32 32">
       <path d="m17.253 16 7.369-7.369a.886.886 0 0 0-.047-1.207.89.89 0 0 0-1.206-.047L16 14.746 8.631 7.368A.892.892 0 0 0 7.369 8.63l7.378 7.369-7.378 7.369a.891.891 0 0 0-.05 1.304.89.89 0 0 0 1.304-.051l7.378-7.369 7.369 7.369a.885.885 0 0 0 1.206-.047.89.89 0 0 0 .047-1.206l-7.369-7.369z"/>
     </symbol>
