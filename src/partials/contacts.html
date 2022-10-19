@@ -1,5 +1,5 @@
 <section class="section section-address">
-  <div class="container container__address" id="#contacts">
+  <div class="container container__address" id="contacts">
     <h2 class="visually-hidden">Our contacts</h2>
     <ul class="address">
       <li class="address__item">
@@ -118,15 +118,16 @@
       </li>
     </ul>
     <div class="box__btn">
-      <button class="btn contacts__btn" type="button">
+      <button class="btn contacts__btn js-modal-open" type="button" data-modal="location-modal">
         Our Locations
         <svg class="about__arrow" width="12" height="12">
           <use href="./images/sprite.svg#button_arrow"></use>
         </svg>
       </button>
       <button
-        class="btn contacts__btn contacts__btn--transparent"
+        class="btn contacts__btn contacts__btn--transparent js-modal-open"
         type="button"
+        data-modal="franchise-modal"
       >
         Franchise
         <svg class="about__arrow" width="12" height="12">
