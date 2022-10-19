@@ -813,10 +813,7 @@ body {
 }
 
 .contacts {
-  background-image: url(/src/images/mobile/IceCreamFon4@1x.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 480px 345px;
+  background-image: url();
 }
 
 .address {
@@ -1010,18 +1007,28 @@ body {
   }
 }
 .box__btn .contacts__btn {
-  width: 196px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  text-align: center;
 }
-.box__btn .contacts__btn--transparent {
-  padding: 12px 46px;
-  background-color: transparent;
-  border: 2px solid #f8d24e;
+
+@media screen and (min-width: 768px) {
+  br {
+    display: none;
+  }
 }
-.box__btn .contacts__btn--transparent:hover, .box__btn .contacts__btn--transparent:focus {
-  background-color: transparent;
-  border-color: #0a8817;
+
+.tablet_article {
+  display: none;
 }
-.box__btn .contacts__btn--transparent:disabled {
-  border-color: #ababab;
+@media screen and (min-width: 768px) {
+  .tablet_article {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tablet_article {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
