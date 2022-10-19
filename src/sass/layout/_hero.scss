@@ -1,11 +1,13 @@
 .hero {
+    color: $main-txt-cl;
     background-color: $dark-green-bg;
 }
 
+
 .hero .container {
     position: relative;
-    
-    color: $main-txt-cl;
+    padding-top: 58px;
+    padding-bottom: 239px;
 
     background-image: url(/src/images/mobile/heroDots@1x.png);
     background-position: bottom;
@@ -15,65 +17,47 @@
     @media screen and (min-resolution: 2dppx),
     screen and (min-resolution: 192dpi),
     screen and (min-device-pixel-ratio: 2) {
-            background-image: url(/src/images/mobile/heroDots@2x.png);
+        background-image: url(/src/images/mobile/heroDots@2x.png);
     }
 }
 
 .hero__title {
-    margin: 0 0 20px;
     font-family: $secondary-font;
     font-weight: 400;
     text-transform: uppercase;
-}
 
-.hero__title--first-line {
     font-size: 26px;
-    line-height: 33px;
+    line-height: 1.15;
     letter-spacing: 0.04em;
 }
 
-.hero__title--second-line {
-    font-size: 34px;
-    line-height: 33px;
-}
 
 .hero__title--third-line {
-    font-size: 37px;
-    line-height: 42px;
-    letter-spacing: 0.04em;
+    font-size: 34px;
+    line-height: 1;
 }
 
-.hero__product {
-    outline: 1px solid tomato;
-    margin-bottom: 239px;
-    padding: 10px;
-    color: $accent-txt-cl;
-    background-color: transparent;
-    font-size: 8px;
-    font-family: $main-font;
-    font-weight: 600;
-    line-height: 10px;
+.hero__buttons {
+    margin-top: 32px;
 }
 
-.hero__modal-video {
-    outline: 1px solid tomato;
-    margin-left: 8px;
-    padding: 10px;
-    color: $yellow-txt-cl;
-    border: none;
-    background-color: transparent;
-    text-decoration: underline;
-
-    font-size: 8px;
-    font-family: $main-font;
-    font-weight: 600;
-    line-height: 10px;
-}
 
 .hero__icecream {
     position: absolute;
-    bottom: -14%;
-    right: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+     bottom: -53px;
+    
+    @media screen and (max-width: 767px) {
+        & img {   
+            margin-left: auto;
+            margin-right: auto; 
+        }  
+    }
+
 }
 
 .hero__plate {
@@ -84,21 +68,51 @@
     display: none;
 }
 
+.branches {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .hero .container {
-        height: 342px;
+        padding: 32px 400px 14px 32px;
         background-image: url(/src/images/tablet/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
         screen and (min-resolution: 192dpi),
         screen and (min-device-pixel-ratio: 2) {
-                background-image: url(/src/images/tablet/heroDots@2x.png);
+            background-image: url(/src/images/tablet/heroDots@2x.png);
         }
     }
 
+    .hero__title {
+        font-size: 18px;
+        line-height: 1.33;
+
+        @media screen and (max-width: 1199px) {
+            .hero__title--third-line {
+            font-size: 24px;
+            line-height: 1;
+            }
+        }
+    }
+
+    .hero__text {
+        display: block;
+        max-width: 151px;
+        margin: 56px 0 0 185px;
+
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .hero__buttons {
+       margin-top: 20px;
+    }
+
     .hero__icecream {
-        bottom: -15%;
-        right: 3%;
+        bottom: -56px;
+        left: 47%;
+        pointer-events: none;
     }
 
     .hero__plate {
@@ -108,18 +122,66 @@
         bottom: 10px;
 
     }
+
+    .hero__arrow {
+        margin-top: 8px;
+        margin-left: 20px;
+        padding: 0;
+        border: none;
+        fill: $white-btn-cl;
+        background-color: transparent;
+        transform: translateX(-50%);
+    }
+
+
+    .branches {
+        display: block;
+        position: absolute;
+        top: 22px;
+        right: 32px;
+        text-align: end;
+    }
+
+    .branches__number{
+        display: block;
+        margin-bottom: 4px;
+
+        color: $accent-txt-cl;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 1.21;
+        letter-spacing: 00.04em;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+
+    }
+
+    .branches__text {
+        font-size: 8px;
+        line-height: 1.25;
+    }
+
+
 }
 
 @media screen and (min-width: 1200px) {
     .hero .container {
-        height: 590px;
+        padding: 44px 744px 96px 16px;
         background-image: url(/src/images/desktop/heroDots@1x.png);
 
         @media screen and (min-resolution: 2dppx),
         screen and (min-resolution: 192dpi),
         screen and (min-device-pixel-ratio: 2) {
-                background-image: url(/src/images/desktop/heroDots@2x.png);
+            background-image: url(/src/images/desktop/heroDots@2x.png);
         }
+    }
+
+    .hero__title {
+        font-size: 38px;
+        line-height: 1.26;
+        letter-spacing: 00.04em;
     }
 
     .hero__icecream {
@@ -132,4 +194,86 @@
         bottom: 65px;
 
     }
+
+    .hero__buttons {
+       margin-top: 28px;
+    }
+    
+    .hero__text {
+        max-width: 200px;
+        margin: 109px 0 0px 240px;
+        font-size: 14px;
+        line-height: 1.42;
+
+    }
+
+    .hero__arrow {
+        margin-top: 12px;
+    }
+
+    .branches {
+        top: 52px;
+        right: 16px;
+        text-align: end;
+    }
+
+    .branches__number {
+        font-size: 46px;
+
+        &:not(:first-child) {
+            margin-top: 16px;
+        }
+    }
+
+    .branches__text{
+        font-size: 14px;
+    }
+}
+
+.arrow {
+    display: block;
+    height: 100%;
+
+    .hero__arrow:hover &,
+    .hero__arrow:focus &,
+    .hero__arrow:active & {
+        display: none;
+    }
+}
+
+.arrow_hover {
+    display: none;
+    height: 100%;
+
+    .hero__arrow:hover & {
+        display: block;
+    }
+
+    .hero__arrow:active & {
+        display: none;
+    }
+
+    .hero__arrow:focus & {
+        display: none;
+
+    }
+
+}
+
+.arrow_focus {
+    display: none;
+    height: 100%;
+
+    .hero__arrow:focus & {
+        display: block;
+
+    }
+
+}
+
+.hero__arrow:hover,
+.hero__arrow:focus {
+    cursor: pointer;
+    width: 50px;
+    outline: none;
 }

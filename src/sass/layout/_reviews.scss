@@ -1,0 +1,75 @@
+.section-reviews {
+  padding-top: 186px;
+  padding-bottom: 393px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 223px;
+    padding-bottom: 384px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 451px;
+    padding-bottom: 196px;
+  }
+
+  background-image: url(../images/desktop/IceCreamFon4@1x.png);
+  background-size: cover;
+}
+
+.reviews__text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  padding: 34px 39px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(31 / 12);
+  letter-spacing: 0.04em;
+  color: $main-txt-cl;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 705px;
+    padding: 29px 80px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    padding: 39px 74px;
+    font-size: 16px;
+  }
+
+  background-color: $dark-green-bg;
+  border-radius: 24px;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.reviews__location {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(37 / 20);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+.slick-dots li button::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: $dark-green-bg;
+  border-radius: 50%;
+}
+
+.reviews__img {
+  margin: 0 auto;
+}

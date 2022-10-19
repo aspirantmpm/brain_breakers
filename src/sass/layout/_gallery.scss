@@ -1,0 +1,33 @@
+.section-gallery {
+  position: relative;
+}
+
+.gallery__wrapper {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 279px;
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+    top: -164px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1013px;
+    top: -94px;
+  }
+}
+
+.gallery__img {
+  object-position: center;
+  object-fit: cover;
+  max-height: 130px;
+  @media screen and (min-width: 768px) {
+    max-height: 327px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: 422px;
+  }
+
+  border-radius: 24px;
+}

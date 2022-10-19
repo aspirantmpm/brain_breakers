@@ -1,0 +1,238 @@
+.about {
+    background-color: $dark-green-bg;
+    padding-top: 60px;
+    padding-bottom: 42px;
+    
+    @media screen and (min-width: $tablet) {
+         padding-bottom: 74px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+         padding-bottom: 89px;
+    }
+}
+
+.about__label {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    
+
+    font-family: $main-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    color: $main-txt-cl;
+
+    @media screen and (min-width: $tablet) {
+        font-weight: 800;
+        letter-spacing: 0.04em;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        
+    }
+}
+
+.about__title {
+    width: 210px;
+
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    font-family: $secondary-font;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: $main-txt-cl;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 72px;
+
+        font-size: 34px;
+        line-height: calc(43 / 34);
+        letter-spacing: 0.06em;
+
+        width: 100%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 82px;
+    }
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+
+@media screen and (min-width: $tablet) {
+       display: flex;
+       flex-direction: row;
+       align-content: center;
+       gap: 32px;
+       content: normal;
+       padding: 0;
+       width: 100%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        gap: 100px;
+    }
+
+}
+
+.about__circle {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 62px;
+
+    border-radius: 50%;
+    width: 278px;
+    height: 278px;
+    background-color: $yellow-bg;
+    position: relative;
+
+@media screen and (min-width: $tablet) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+
+        border-radius: 50%;
+        width: 335px;
+        height: 335px;
+    }
+
+@media screen and (min-width: $desktop) {
+        width: 490px; 
+        height: 490px;
+    }
+
+}
+
+.about__photo {
+   position: absolute;
+   top: 35;
+   left: 3;
+}
+
+.about__box {
+   margin-top: 40px;
+   margin-left: auto;
+   margin-right: auto;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+@media screen and (min-width: $tablet) {
+        margin-bottom: 48px;
+        width: 334px;
+        align-items: flex-start;
+    }
+
+@media screen and (min-width: $desktop) {
+        width: 463px;
+    }
+}
+
+.about__text {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    width: 220px;
+
+    color: $main-txt-cl;
+
+    margin-bottom: 4px;
+
+    @media screen and (min-width: $tablet) {
+        text-align: start;
+        width: 100%;
+
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+    }
+}
+
+.about__text-other {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 162%;
+    text-align: center;
+
+    width: 220px;
+    
+    color: $main-txt-cl;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+        line-height: 176%;
+        letter-spacing: 0.04em;
+        text-align: start;
+        width: 100%;
+
+        margin-bottom: 8px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 194%;
+    }
+}
+
+.about__text-another {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 194%;
+        letter-spacing: 0.04em;
+            
+        color: $main-txt-cl;
+
+        width: 85%;
+
+        margin-bottom: 48px;
+    }
+    
+        @media screen and (min-width: $desktop) {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+.about-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__arrow {
+    fill: none;
+    stroke: currentColor;
+}
+
+
+
+

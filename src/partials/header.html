@@ -1,0 +1,63 @@
+<header class="header">
+  <div class="header-content">
+    <picture class="header-logo">
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/modal/mobile-menu/mobile-menu-logo_tab-@1x.png 1x,
+          ./images/modal/mobile-menu/mobile-menu-logo_tab-@2x.png 2x
+        "
+      />
+      <source
+        media="(maxwidth: 767px)"
+        srcset="
+          ./images/modal/mobile-menu/mobile-menu-logo_mob-@1x.png 1x,
+          ./images/modal/mobile-menu/mobile-menu-logo_mob-@2x.png 2x
+        "
+      />
+      <img
+        src="./images/modal/mobile-menu/mobile-menu-logo_mob-@2x.png"
+        alt="logo icecream"
+      />
+    </picture>
+    <nav class="header-menu">
+      <ul class="header-nav">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#about">How it’s made?</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#products">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button
+        class="header-buttons__menu js-modal-open"
+        data-modal="mobile-menu"
+        type="button"
+        name="menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="32px" height="32px" aria-label="Перемикач мобільного меню">
+          <use class="icon-menu" href="./images/sprite.svg#github"></use>
+        </svg>
+      </button>
+      <button
+        class="header-buttons__modal js-modal-open"
+        data-modal="location-modal"
+      >
+        <span>Buy now</span>
+        <svg class="header__buy-arrow" width="12" height="12">
+          <use href="./images/sprite.svg#button_arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
