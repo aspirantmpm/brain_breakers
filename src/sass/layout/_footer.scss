@@ -66,10 +66,8 @@
 .footer-social {
   display: flex;
   justify-content: end;
-  gap: 27px;
   margin-bottom: 38px;
   @media screen and (min-width: $tablet) {
-    gap: 30px;
     margin-bottom: 32px;
   }
   @media screen and (min-width: $desktop) {
@@ -78,6 +76,9 @@
   &__list {
     display: flex;
     gap: 27px;
+    @media screen and (min-width: $tablet) {
+      gap: 30px;
+    }
   }
   &__link {
     display: flex;
@@ -87,19 +88,25 @@
     height: 32px;
     background-color: $yellow-bg;
     border-radius: 50%;
+    transition: $anim;
     @media screen and (min-width: $tablet) {
       width: 34px;
       height: 34px;
     }
   }
+  &__link:focus {
+    width: 35px;
+    height: 35px;
+    outline: none;
+  }
   &__icon {
     fill: $dark-green-bg;
+    transition: $anim;
   }
-}
-.footer-social__icon:hover,
-.footer-social__icon:focus {
-  fill: $light-icon-cl;
-  transition: $anim;
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: #fcfcfc;
+  }
 }
 .footer-contact {
   text-align: right;
