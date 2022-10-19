@@ -80,6 +80,12 @@
       gap: 30px;
     }
   }
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+  }
   &__link {
     display: flex;
     align-items: center;
