@@ -813,7 +813,10 @@ body {
 }
 
 .contacts {
-  background-color: #84a178;
+  background-image: url(/src/images/mobile/IceCreamFon4@1x.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 480px 345px;
 }
 
 .address {
@@ -834,6 +837,7 @@ body {
     flex-direction: row;
     font-size: 14px;
     line-height: 1.8571428571;
+    margin-bottom: 64px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -998,6 +1002,12 @@ body {
   flex-direction: column;
   gap: 16px;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .box__btn {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .box__btn .contacts__btn {
   width: 196px;

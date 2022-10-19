@@ -1,5 +1,6 @@
 .contacts {
-    background-color: $dark-green-bg;
+    background-image: url();
+
 }
 
 .address {
@@ -19,6 +20,7 @@
         flex-direction: row;
         font-size: 14px;
         line-height: calc(26 / 14);
+        margin-bottom: 64px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -188,28 +190,38 @@
     gap: 16px;
     align-items: center;
 
-    .contacts__btn {
-        width: 196px;
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: center;
 
-        &--transparent {
-            padding: 12px 46px;
-            background-color: transparent;
-            border: 2px solid $yellow-btn-br;
-
-            &:hover,
-            &:focus {
-                background-color: transparent;
-                border-color: $green-btn-br;
-            }
-
-            &:disabled {
-                border-color: $grey-btn-br;
-            }
-        }
-
-        transition: border $anim,
-        background-color $anim;
     }
 
+    .contacts__btn {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: calc(18 / 14);
+        text-align: center;
 
+    }
+}
+
+br {
+    @media screen and (min-width: $tablet) {
+        display: none;
+
+    }
+
+}
+
+.tablet_article {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: inline;
+
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
 }
