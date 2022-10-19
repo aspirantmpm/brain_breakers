@@ -118,15 +118,26 @@
       </li>
     </ul>
     <div class="box__btn">
-      <button class="btn contacts__btn" type="button">
+      <button
+        class="btn contacts__btn js-modal-open"
+        type="button"
+        data-modal="location-modal"
+        aria-expanded="false"
+        aria-controls="location-modal"
+        name="location"
+      >
         Our Locations
         <svg class="about__arrow" width="12" height="12">
           <use href="./images/sprite.svg#button_arrow"></use>
         </svg>
       </button>
       <button
-        class="btn contacts__btn contacts__btn--transparent"
+        class="btn contacts__btn contacts__btn--transparent js-modal-open"
         type="button"
+        data-modal="franchise-modal"
+        aria-expanded="false"
+        aria-controls="franchise-modal"
+        name="Franchise"
       >
         Franchise
         <svg class="about__arrow" width="12" height="12">
