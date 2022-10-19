@@ -49,7 +49,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    bottom: -53px;
+     bottom: -53px;
     
     @media screen and (max-width: 767px) {
         & img {   
@@ -57,6 +57,7 @@
             margin-right: auto; 
         }  
     }
+
 }
 
 .hero__plate {
