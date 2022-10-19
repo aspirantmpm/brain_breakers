@@ -1,6 +1,16 @@
 .section-address {
     position: relative;
     background-color: $dark-green-bg;
+    height: 1105px;
+
+    @media screen and (min-width: $tablet) {
+        height: 375px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        height: 670px;
+    }
+
 
 }
 
