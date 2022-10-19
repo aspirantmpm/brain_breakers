@@ -239,6 +239,12 @@
     margin-right: auto;
     width: 368px;
   }
+
+  &:invalid {
+    .submit__btn {
+        background-color: $grey-btn-cl;
+    }
+  }
 }
 
 .modal-form__label {
