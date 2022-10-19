@@ -134,6 +134,22 @@
     font-size: 20px;
     margin-bottom: 32px;
   }
+
+  &--buy-now {
+    margin-bottom: 84px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 103px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &--ingredients {
+      width: 142px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 .modal__text {
@@ -216,6 +232,9 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 368px;
   }
 }
 
@@ -224,13 +243,16 @@
   font-size: 12px;
   color: $accent-txt-cl;
   line-height: calc(17 / 12);
-  padding-left: 12px;
   display: block;
   margin-bottom: 12px;
 
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: calc(20 / 14);
+    margin-bottom: 16px;
+  }
+
+  &--ingredients {
     margin-bottom: 16px;
   }
 }
@@ -245,6 +267,10 @@
   background: $input-bg;
 
   @media screen and (min-width: $tablet) {
+    height: 42px;
+  }
+
+  &--ingredients {
     height: 42px;
   }
 }
@@ -270,6 +296,10 @@
   padding-bottom: 7px;
 
   @media screen and (min-width: $tablet) {
+    height: 84px;
+  }
+
+  &-ingredients {
     height: 84px;
   }
 }
@@ -446,5 +476,171 @@
 
   &:disabled {
     background-color: $grey-btn-bg;
+  }
+}
+
+// buy now modal styles
+
+.modal-buy-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 84px;
+
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+    margin-bottom: 40px;
+  }
+}
+
+.modal-buy-now__item {
+  position: relative;
+}
+
+.modal-buy-now__img-wrapper {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+    left: 0;
+    bottom: 59px;
+  }
+}
+
+.modal-buy-now__item:nth-of-type(1) > .modal-buy-now__img-wrapper::after {
+  background: $green-circle-bg;
+  box-shadow: $green-small-circle-box-shadow;
+}
+
+.modal-buy-now__item:nth-of-type(2) > .modal-buy-now__img-wrapper::after {
+  background: $yellow-circle-bg;
+  box-shadow: $buy-now-modal-yellow-circle;
+}
+
+.modal-buy-now__item:nth-of-type(3) > .modal-buy-now__img-wrapper::after {
+  background: $brown-circle-bg;
+  box-shadow: $buy-now-modal-brown-circle;
+}
+
+.modal-buy-now__img {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+  bottom: 66px;
+  left: 0;
+}
+
+.modal-buy-now__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 132px;
+  height: 136px;
+
+  cursor: pointer;
+}
+
+.modal-buy-now__checkbox {
+  display: none;
+}
+
+.modal-buy-now__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+
+  width: 132px;
+  height: 136px;
+
+  padding: 0px 0px 20px 0px;
+  border-radius: 16px;
+  border: 2px solid;
+  box-shadow: $buy-now-modal-btn-box-shadow;
+}
+
+.modal-buy-now__item:nth-of-type(1)
+  .modal-buy-now__checkbox
+  + .modal-buy-now__btn {
+  border-color: $green-br;
+}
+
+.modal-buy-now__item:nth-of-type(2)
+  .modal-buy-now__checkbox
+  + .modal-buy-now__btn {
+  border-color: $yellow-br;
+}
+
+.modal-buy-now__item:nth-of-type(3)
+  .modal-buy-now__checkbox
+  + .modal-buy-now__btn {
+  border-color: $brown-br;
+}
+
+.modal-buy-now__item:nth-of-type(1)
+  .modal-buy-now__checkbox:checked
+  + .modal-buy-now__btn {
+  background-color: $green-br;
+}
+
+.modal-buy-now__item:nth-of-type(2)
+  .modal-buy-now__checkbox:checked
+  + .modal-buy-now__btn {
+  background-color: $yellow-br;
+}
+
+.modal-buy-now__item:nth-of-type(3)
+  .modal-buy-now__checkbox:checked
+  + .modal-buy-now__btn {
+  background-color: $brown-br;
+}
+
+.modal-buy-now__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+
+  padding: 12px 34px;
+  margin: 0 auto;
+
+  border: none;
+  border-radius: 10px;
+  background-color: $yellow-btn-bg;
+
+  &:hover,
+  &:focus {
+    background-color: $green-btn-bg;
+  }
+  &:focus {
+    color: $white-btn-cl;
+  }
+
+  &:disabled {
+    background-color: $grey-btn-cl;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.22;
   }
 }
