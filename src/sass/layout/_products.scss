@@ -91,30 +91,15 @@
 .section__products {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-position: center;
-
-    //  background-image: url(../images/extraLarge/IceCreamFon2@1x.png);
-
-    //     @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //         background-image: url(../images/extraLarge/IceCreamFon2@2x.png);
-    //     }
-    background-image: url(../images/mobile/IceCreamFon1@1x.png), url(../images/mobile/IceCreamFon2@1x.png), url(../images/mobile/IceCreamFon3@1x.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: top, center, bottom;
-   
-
-    @media screen and (min-width:321px) {
-        background-image: url(../images/tablet/iceCreamFon2@1x.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/tablet/iceCreamFon2@2x.png);
-        }
-    }
-
+    background-size: cover;
+    
+    background-image: url(../images/mobile/iceCreamFon@1x.png);
+    @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             background-image: url(../images/mobile/iceCreamFon@2x.png);
+       }
+    
     @media screen and (min-width:769px) {
         background-image: url(../images/desktop/IceCreamFon2@1x.png);
 
