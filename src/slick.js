@@ -1,4 +1,4 @@
-$(".opacity").slick({
+$('.opacity').slick({
   infinite: true,
   arrows: false,
   fade: true,
@@ -9,10 +9,12 @@ $(".opacity").slick({
   draggable: false,
 });
 
-$(".one-time").slick({
+$('.one-time').slick({
   dots: true,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
   arrows: false,
+  autoplay: true,
+  autoplaySpeed: 9000,
 });

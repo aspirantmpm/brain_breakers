@@ -11,8 +11,37 @@
     padding-bottom: 196px;
   }
 
-  background-image: url(../images/desktop/IceCreamFon4@1x.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: url(../images/mobile/IceCreamFon4@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/IceCreamFon4@2x.png);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/tablet/iceCreamFon4@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/iceCreamFon4@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/desktop/IceCreamFon4@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/IceCreamFon4@2x.png);
+    }
+  }
 }
 
 .reviews__text {
@@ -63,7 +92,7 @@
   }
 }
 .slick-dots li button::before {
-  content: "";
+  content: '';
   width: 12px;
   height: 12px;
   background-color: $dark-green-bg;
