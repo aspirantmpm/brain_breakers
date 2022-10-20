@@ -14,6 +14,7 @@
   height: 100%;
 
   z-index: 100;
+  transition: opacity $anim, visibility $anim;
 
   background-color: $overlay-bg;
 
@@ -21,6 +22,8 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+
+    transition: opacity $anim, visibility $anim;
   }
 }
 
@@ -36,7 +39,7 @@
   left: 50%;
   overflow-y: auto;
 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 
   width: 280px;
 
@@ -47,13 +50,18 @@
   border: 2px solid $yellow-modal-br;
   border-radius: 10px;
 
+  transition: opacity $anim, visibility $anim, transform $anim;
+
   background-color: $modal-bg;
 
   &.is-open {
     visibility: visible;
     opacity: 1;
 
+    transform: translate(-50%, -50%);
     max-height: 94vh;
+
+    transition: opacity $anim, visibility $anim, transform $anim;
   }
 
   &--ingredients {
@@ -91,6 +99,8 @@
 
   padding: 0;
   border: none;
+
+  transition: fill $anim;
 
   background-color: transparent;
 
@@ -242,7 +252,7 @@
 
   &:invalid {
     .submit__btn {
-        background-color: $grey-btn-cl;
+      background-color: $grey-btn-cl;
     }
   }
 }
@@ -279,6 +289,7 @@
   padding: 0 12px;
   border: 1px solid $dark-green-bg;
   border-radius: 10px;
+
   background: $input-bg;
 
   @media screen and (min-width: $tablet) {
@@ -478,6 +489,8 @@
   border: none;
   border-radius: 10px;
 
+  transition: background $anim, color $anim;
+
   background-color: $yellow-btn-bg;
 
   &:hover,
@@ -640,6 +653,9 @@
 
   border: none;
   border-radius: 10px;
+
+  transition: background $anim, color $anim;
+
   background-color: $yellow-btn-bg;
 
   &:hover,
