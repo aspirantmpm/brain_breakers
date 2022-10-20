@@ -1,5 +1,14 @@
 .modal-mobile-menu {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
   position: fixed;
 
   top: 0;
@@ -13,7 +22,9 @@
   padding-top: 100px;
   padding-bottom: 63px;
 
-  transform: translateX(100%);
+  transform: translate(100%, 0);
+
+  transition: opacity $anim, transform $anim, visibility $anim;
 
   background-color: $mob-menu-bg;
 
@@ -32,13 +43,12 @@
 
   @media screen and (max-width: 1199px) {
     &.is-open {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      text-align: center;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      transform: translate(0, 0);
 
-      transform: translateX(0);
+      transition: opacity $anim, transform $anim, visibility $anim;
     }
   }
 }
@@ -73,9 +83,11 @@
 
   padding: 0;
   border: none;
-  background-color: transparent;
 
   fill: $light-icon-cl;
+  transition: fill $anim;
+
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -117,6 +129,8 @@
 
   color: $light-icon-cl;
 
+  transition: color $anim;
+
   @media screen and (min-width: 768px) {
     font-size: 48px;
   }
@@ -143,6 +157,9 @@
 
   border: none;
   border-radius: 10px;
+
+  transition: background $anim, color $anim;
+
   background-color: $yellow-btn-bg;
 
   @media screen and (min-width: 768px) {
