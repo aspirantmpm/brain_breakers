@@ -1,24 +1,18 @@
 .hero {
     color: $main-txt-cl;
     background-color: $dark-green-bg;
+    padding-top: 58px;
+    padding-bottom: 239px;
+
+    background-image: url(/src/images/mobile/heroDots@1x.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    
 }
 
 
 .hero .container {
     position: relative;
-    padding-top: 58px;
-    padding-bottom: 239px;
-
-    background-image: url(/src/images/mobile/heroDots@1x.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media screen and (min-resolution: 2dppx),
-    screen and (min-resolution: 192dpi),
-    screen and (min-device-pixel-ratio: 2) {
-        background-image: url(/src/images/mobile/heroDots@2x.png);
-    }
 }
 
 .hero__title {
@@ -42,7 +36,8 @@
 }
 
 .hero__buttons {
-    margin-top: 32px;
+    display: flex;
+    margin-top: 35px;
 }
 
 
@@ -53,7 +48,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    bottom: -53px;
+    bottom: -292px;
     pointer-events: none;
     animation-name: bounce;
     animation-timing-function: linear;
@@ -71,17 +66,17 @@
 
 @keyframes bounce {
     0% {
-        bottom: 0px;
+        bottom: -370px;
         scale: 0.5;
     }
 
     50% {
-        bottom: -25px;
+        bottom: -320px;
         scale: 0.75;
     }
 
     100% {
-        bottom: -53px;
+        bottom: -292px;
         scale: 1;
     }
 }
@@ -100,15 +95,16 @@
 }
 
 @media screen and (min-width: 768px) {
-    .hero .container {
-        padding: 32px 400px 14px 32px;
+    .hero {
+        padding-top: 32px;
+        padding-bottom: 14px;
         background-image: url(/src/images/tablet/heroDots@1x.png);
+        background-position: bottom center;
+       
+    }
 
-        @media screen and (min-resolution: 2dppx),
-        screen and (min-resolution: 192dpi),
-        screen and (min-device-pixel-ratio: 2) {
-            background-image: url(/src/images/tablet/heroDots@2x.png);
-        }
+    .hero .container {
+        padding: 0 400px 0 32px;
     }
 
     .hero__title {
@@ -133,26 +129,26 @@
     }
 
     .hero__buttons {
-       margin-top: 20px;
+       margin-top: 22px;
     }
 
     .hero__icecream {
-        bottom: -56px;
+        bottom: -70px;
         left: 47%;
 
         @keyframes bounce {
                 0% {
-                    bottom: 0px;
+                    bottom: -25px;
                     scale: 0.5;
                 }
         
                 50% {
-                    bottom: -25px;
+                    bottom: -50px;
                     scale: 0.75;
                 }
         
                 100% {
-                    bottom: -56px;
+                    bottom: -70px;
                     scale: 1;
                 }
             }
@@ -162,7 +158,7 @@
         display: block;
         position: absolute;
         left: 32px;
-        bottom: 10px;
+        bottom: -4px;
 
         animation-name: plate;
         animation-timing-function: linear;
@@ -188,20 +184,18 @@
     }
 
     .hero__arrow {
+        position: relative;
         margin-top: 8px;
-        margin-left: 20px;
         padding: 0;
         border: none;
-        fill: $white-btn-cl;
         background-color: transparent;
-        transform: translateX(-50%);
     }
 
 
     .branches {
         display: block;
         position: absolute;
-        top: 22px;
+        top: 0;
         right: 32px;
         text-align: end;
     }
@@ -231,15 +225,16 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .hero .container {
-        padding: 44px 744px 96px 16px;
+    .hero {
+        padding-top: 44px;
+        padding-bottom: 96px;
         background-image: url(/src/images/desktop/heroDots@1x.png);
+        background-position: bottom center;
 
-        @media screen and (min-resolution: 2dppx),
-        screen and (min-resolution: 192dpi),
-        screen and (min-device-pixel-ratio: 2) {
-            background-image: url(/src/images/desktop/heroDots@2x.png);
-        }
+    }
+
+    .hero .container {
+        padding: 0 744px 0 16px;
     }
 
     .hero__title {
@@ -249,22 +244,22 @@
     }
 
     .hero__icecream {
-        bottom: -17%;
+        bottom: -196px;
         right: 0;
 
         @keyframes bounce {
                 0% {
-                    bottom: 0px;
+                    bottom: -270px;
                     scale: 0.5;
                 }
         
                 50% {
-                    bottom: -25px;
+                    bottom: -250px;
                     scale: 0.75;
                 }
         
                 100% {
-                    bottom: -100px;
+                    bottom: -196px;
                     scale: 1;
                 }
             }
@@ -274,7 +269,7 @@
 
     .hero__plate {
         left: 17px;
-        bottom: 65px;
+        bottom: -31px;
 
         @keyframes plate {
                 0% {
@@ -296,23 +291,22 @@
     }
 
     .hero__buttons {
-       margin-top: 28px;
+       margin-top: 32px;
     }
     
     .hero__text {
         max-width: 200px;
-        margin: 109px 0 0px 240px;
+        margin: 109px 0 0 240px;
         font-size: 14px;
         line-height: 1.42;
 
     }
 
     .hero__arrow {
-        margin-top: 12px;
+        margin-top: 20px;
     }
 
     .branches {
-        top: 52px;
         right: 16px;
         text-align: end;
     }
@@ -330,45 +324,49 @@
     }
 }
 
-.arrow {
+.arrow--white {
     display: block;
+    z-index: 3;
     height: 100%;
+    fill: $white-btn-cl;
+    transition: fill $anim;
 
     .hero__arrow:hover &,
     .hero__arrow:focus &,
     .hero__arrow:active & {
-        display: none;
+        fill: transparent;
     }
 }
 
-.arrow_hover {
-    display: none;
+.arrow_hover--white {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    fill: transparent;
     height: 100%;
+    transition: fill $anim;
 
     .hero__arrow:hover & {
-        display: block;
+        fill: $white-btn-cl;
     }
 
-    .hero__arrow:active & {
-        display: none;
-    }
-
-    .hero__arrow:focus & {
-        display: none;
-
-    }
 
 }
 
-.arrow_focus {
-    display: none;
+.arrow_focus--white {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 5;
     height: 100%;
+    fill: transparent;
+    transition: fill $anim;
 
     .hero__arrow:focus & {
-        display: block;
-
+        
+        fill: $white-btn-cl;
     }
-
 }
 
 .hero__arrow:hover,
