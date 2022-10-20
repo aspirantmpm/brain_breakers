@@ -92,7 +92,7 @@
 }
 
 .about__btn {
-    width: max-content;
+  width: max-content;
 }
 
 .contacts__btn {
@@ -111,4 +111,48 @@
     }
   }
   transition: border $anim, background-color $anim;
+}
+
+#button {
+  display: inline-block;
+  color: $black-btn-cl;
+  background-color: $grey-btn-bg;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    color: $white-btn-cl;
+    background-color: $yellow-bg;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: $dark-green-bg;
+  }
+
+  svg {
+    transform: rotate(-90deg) scale(0.5);
+    fill: none;
+    stroke: currentColor;
+    transition: transform $anim;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    transform: rotate(-90deg) scale(0.7);
+  }
 }

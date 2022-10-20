@@ -67,26 +67,26 @@
     </main>
     <include src="./partials/footer.html"></include>
     <include src="./partials/modal.html"></include>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="./button.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./slick.js"></script>
+    <script type="text/javascript">
+      $('.mobile-menu__link').click(function () {
+        $('.modal-mobile-menu.is-open').removeClass('is-open');
+        $('.overlay.is-open').removeClass('is-open');
+      });
+    </script>
   </body>
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-1.11.0.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-  ></script>
-
-  <script
-    type="text/javascript"
-    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-  ></script>
-
-  <script src="./slick.js"></script>
-  <script type="text/javascript">
-    $('.mobile-menu__link').click(function () {
-      $('.modal-mobile-menu.is-open').removeClass('is-open');
-      $('.overlay.is-open').removeClass('is-open');
-    });
-  </script>
 </html>
