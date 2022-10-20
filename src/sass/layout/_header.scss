@@ -6,11 +6,31 @@
   @extend .container;
   display: flex;
   align-items: center;
-  height: 98px;
+  @media screen and (min-width: $desktop) {
+    height: 98px;
+  }
+  @media screen and (max-width: 1199px) {
+    height: 84px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 64px;
+  }
 }
 
 .header-logo {
   margin-right: auto;
+  @media screen and (min-width: $desktop) {
+    width: 60px;
+    height: 65px;
+  }
+  @media screen and (max-width: 1199px) {
+    width: 48px;
+    height: 44px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 40px;
+    height: 37px;
+  }
 }
 
 .header-nav {
