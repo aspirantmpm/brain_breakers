@@ -6,24 +6,26 @@
         <div class="address__box">
           <strong class="address__tittle">CAFE</strong>
         </div>
-        <div class="address__container">
-          <p class="article__name">Chicago</p>
-          <a class="address__link" href="" rel="noreferrer noopener nofollow"
-            >10340 Ridgeland Ave,<br />
-            Chicago Ridge IL 60415, USA</a
-          >
-        </div>
+        <ul class="address__list">
+          <li><p class="article__name">Chicago</p></li>
+          <li>
+            <a class="address__link" href="" rel="noreferrer noopener nofollow"
+              >10340 Ridgeland Ave,<br />
+              Chicago Ridge IL 60415, USA</a
+            >
+          </li>
+        </ul>
 
-        <div class="article__group">
-          <div class="article__box">
+        <ul class="article__list">
+          <li class="article__item">
             <p>Monday - Friday</p>
-            <p class="article__item">06:00 AM - 10:00 PM</p>
-          </div>
-          <div>
+            <p class="article">06:00 AM - 10:00 PM</p>
+          </li>
+          <li>
             <p>Saturday - Sunday</p>
-            <p class="article__item">08:00 AM - 16:00 PM</p>
-          </div>
-        </div>
+            <p class="article">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
 
         <address class="main__address">
           <a
@@ -44,24 +46,26 @@
         <div class="address__box address__box--width">
           <strong class="address__tittle">FOOD TRUCK</strong>
         </div>
-        <div class="address__container">
-          <p class="article__name">Los Angeles</p>
-          <a class="address__link" href="" rel="noreferrer noopener nofollow"
-            >1003 Manhattan Ave, Manhattan Beach,<br class="tablet_article" />
-            CA 90263, USA</a
-          >
-        </div>
+        <ul class="address__list">
+          <li><p class="article__name">Los Angeles</p></li>
+          <li>
+            <a class="address__link" href="" rel="noreferrer noopener nofollow"
+              >1003 Manhattan Ave, Manhattan Beach,<br class="tablet_article" />
+              CA 90263, USA</a
+            >
+          </li>
+        </ul>
 
-        <div class="article__group">
-          <div class="article__box">
+        <ul class="article__list">
+          <li class="article__item">
             <p>Monday - Friday</p>
-            <p class="article__item">06:00 AM - 10:00 PM</p>
-          </div>
-          <div>
+            <p class="article">06:00 AM - 10:00 PM</p>
+          </li>
+          <li>
             <p>Saturday - Sunday</p>
-            <p class="article__item">08:00 AM - 16:00 PM</p>
-          </div>
-        </div>
+            <p class="article">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
 
         <address class="main__address">
           <a
@@ -82,24 +86,26 @@
         <div class="address__box">
           <strong class="address__tittle">CAFE</strong>
         </div>
-        <div class="address__container">
-          <p class="article__name">New York</p>
-          <a class="address__link" href="" rel="noreferrer noopener nofollow"
-            >726 Sterling Pl, Brooklyn,<br />
-            NY 11222, USA</a
-          >
-        </div>
+        <ul class="address__list">
+          <li><p class="article__name">New York</p></li>
+          <li>
+            <a class="address__link" href="" rel="noreferrer noopener nofollow"
+              >726 Sterling Pl, Brooklyn,<br />
+              NY 11222, USA</a
+            >
+          </li>
+        </ul>
 
-        <div class="article__group">
-          <div class="article__box">
+        <ul class="article__list">
+          <li class="article__item">
             <p>Monday - Friday</p>
-            <p class="article__item">06:00 AM - 10:00 PM</p>
-          </div>
-          <div>
+            <p class="article">06:00 AM - 10:00 PM</p>
+          </li>
+          <li>
             <p>Saturday - Sunday</p>
-            <p class="article__item">08:00 AM - 16:00 PM</p>
-          </div>
-        </div>
+            <p class="article">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
 
         <address class="main__address">
           <a
@@ -117,33 +123,37 @@
         </address>
       </li>
     </ul>
-    <div class="box__btn">
-      <button
-        class="btn contacts__btn js-modal-open"
-        type="button"
-        data-modal="location-modal"
-        aria-expanded="false"
-        aria-controls="location-modal"
-        name="location"
-      >
-        Our Locations
-        <svg class="about__arrow" width="12" height="12">
-          <use href="./images/sprite.svg#button_arrow"></use>
-        </svg>
-      </button>
-      <button
-        class="btn contacts__btn contacts__btn--transparent js-modal-open"
-        type="button"
-        data-modal="franchise-modal"
-        aria-expanded="false"
-        aria-controls="franchise-modal"
-        name="Franchise"
-      >
-        Franchise
-        <svg class="about__arrow" width="12" height="12">
-          <use href="./images/sprite.svg#button_arrow"></use>
-        </svg>
-      </button>
-    </div>
+    <ul class="list__btn">
+      <li>
+        <button
+          class="btn contacts__btn js-modal-open"
+          type="button"
+          data-modal="location-modal"
+          aria-expanded="false"
+          aria-controls="location-modal"
+          name="location"
+        >
+          Our Locations
+          <svg class="about__arrow" width="12" height="12">
+            <use href="./images/sprite.svg#button_arrow"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          class="btn contacts__btn contacts__btn--transparent js-modal-open"
+          type="button"
+          data-modal="franchise-modal"
+          aria-expanded="false"
+          aria-controls="franchise-modal"
+          name="Franchise"
+        >
+          Franchise
+          <svg class="about__arrow" width="12" height="12">
+            <use href="./images/sprite.svg#button_arrow"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
   </div>
 </section>

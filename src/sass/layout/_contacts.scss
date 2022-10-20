@@ -1,7 +1,7 @@
 .section-address {
     position: relative;
     background-color: $dark-green-bg;
-    height: 1105px;
+    height: 1145px;
 
     @media screen and (min-width: $tablet) {
         height: 375px;
@@ -64,17 +64,14 @@
     background-color: $main-txt-cl;
     padding: 40px 32px;
     width: 280px;
-    height: 412px;
 
     @media screen and (min-width: $tablet) {
         width: 224px;
-        height: 528px;
         padding: 40px 24px;
     }
 
     @media screen and (min-width: $desktop) {
         width: 368px;
-        height: 538px;
         padding: 40px 40px;
     }
 }
@@ -118,10 +115,14 @@
     }
 }
 
-.address__container {
+.address__list {
     margin-bottom: 48px;
 
     @media screen and (min-width: $tablet) {
+        margin-bottom: 58px;
+    }
+
+    @media screen and (min-width: $desktop) {
         margin-bottom: 64px;
     }
 
@@ -164,17 +165,12 @@
     }
 }
 
-
-.article__box {
-    margin-bottom: 8px;
+.article__list {
+    margin-bottom: 48px;
 
     @media screen and (min-width: $tablet) {
-        margin-bottom: 12px;
+        margin-bottom: 64px;
     }
-}
-
-.article__group {
-    margin-bottom: 48px;
 
     &::after {
         content: "";
@@ -196,6 +192,14 @@
 }
 
 .article__item {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 12px;
+    }
+}
+
+.article {
     color: $grey-btn-bg;
 }
 
@@ -205,7 +209,7 @@
     font-style: normal;
 }
 
-.box__btn {
+.list__btn {
     display: flex;
     flex-direction: column;
     gap: 16px;
