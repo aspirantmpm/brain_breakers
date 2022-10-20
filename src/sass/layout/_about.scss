@@ -18,7 +18,6 @@
     display: flex;
     justify-content: center;
     
-
     font-family: $main-font;
     font-weight: 700;
     text-transform: uppercase;
@@ -38,7 +37,6 @@
 .about__title {
     width: 210px;
 
-    margin-top: 12px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
@@ -120,7 +118,6 @@
 }
 
 .about__box {
-   margin-top: 40px;
    margin-left: auto;
    margin-right: auto;
 
@@ -130,7 +127,6 @@
    align-items: center;
 
 @media screen and (min-width: $tablet) {
-        margin-bottom: 48px;
         width: 334px;
         align-items: flex-start;
     }
