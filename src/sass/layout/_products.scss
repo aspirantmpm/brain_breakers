@@ -29,6 +29,11 @@
 
 .section__title--center {
     text-align: center;
+
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .product__box {
@@ -158,18 +163,18 @@
 }
 
 .products__items:first-child::before {
-    background-color: $light-green-bg;
-    box-shadow: $green-small-circle-box-shadow;
+    background-color:$green-circle-bg;
+    box-shadow: $green-circle-box-shadow;
 }
 
-.products__items:nth-child::before {
-    background-color: rgba(248, 210, 78, 0.7);
-    box-shadow: 0px 5px 20px 0px rgba(153, 114, 23, 0.25);
+.products__items:nth-child(2)::before {
+    background-color: $yellow-circle-bg;
+    box-shadow: $yellow-circle-box-shadow;
 }
 
 .products__items:last-child::before {
-    background-color: rgba(213, 117, 63, 0.7);
-    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+    background-color:$brown-circle-bg;
+    box-shadow:$brown-circle-box-shadow;
 }
 
 .products__items::after {
@@ -255,126 +260,59 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-// .more_about_products {
-
-//     width: 40px;
-//     height: 15px;
-//     border: none;
-//     background-color: transparent;
-
-//     display: flex;
-//     margin-left: auto;
-//     margin-right: auto;
-
-//     @media screen and (min-width:1200px) {
-//         bottom: 45px;
-
-//     }
-
-//     margin-top: auto;
-// }
-
-// .arrow {
-//     display: block;
-//     height: 100%;
-
-//     .more_about_products:hover &,
-//     .more_about_products:focus &,
-//     .more_about_products:active & {
-//         display: none;
-//     }
-// }
-
-// .arrow_hover {
-//     display: none;
-//     height: 100%;
-
-//     .more_about_products:hover & {
-//         display: block;
-//     }
-
-//     .more_about_products:active & {
-//         display: none;
-//     }
-
-//     .more_about_products:focus & {
-//         display: none;
-
-//     }
-
-// }
-
-// .arrow_focus {
-//     display: none;
-//     height: 100%;
-
-//     .more_about_products:focus & {
-//         display: block;
-//     }
-
-// }
-
-// .more_about_products:hover,
-// .more_about_products:focus {
-//     cursor: pointer;
-//     width: 50px;
-//     outline: none;
-// }
-
 .more_about_products {
     margin-top: auto;
-    width: 40px;
-    height: 15px;
+    width: 50px;
+    height: 20px;
     border: none;
     background-color: transparent;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+
     @media screen and (min-width:1200px) {
         margin-bottom: 45px;
     }
+
+    position: relative;
 }
+
 .arrow {
-    display: block;
-    height: 100%;
+    position: absolute;
+    z-index: 10;
+    transition: fill $anim;
+
     .more_about_products:hover &,
     .more_about_products:focus &,
-    .more_about_products:active & {
-        display: none;
-    }
+    {
+    fill: transparent;
 }
+}
+
 .arrow_hover {
-    display: none;
-    height: 100%;
+    position: absolute;
+    z-index: 11;
+    fill: transparent;
+    transition: fill $anim;
+
     .more_about_products:hover & {
-        display: block;
-    }
-    .more_about_products:active & {
-        display: none;
-    }
-    .more_about_products:focus & {
-        display: none;
+        fill: black;
     }
 }
+
 .arrow_focus {
-    display: none;
-    height: 100%;
+    position: absolute;
+    z-index: 12;
+    fill: transparent;
+    transition: fill $anim;
+
     .more_about_products:focus & {
-        display: block;
+        fill: black;
     }
 }
+
 .more_about_products:hover,
 .more_about_products:focus {
     cursor: pointer;
-    width: 50px;
     outline: none;
 }
