@@ -1,4 +1,5 @@
 .footer {
+  padding-bottom: 62px;
   background-color: $dark-green-bg;
   @media screen and (min-width: $tablet) {
     & .container {
@@ -116,7 +117,6 @@
 }
 .footer-contact {
   text-align: right;
-  margin-bottom: 40px;
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
   }
@@ -142,7 +142,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding-bottom: 62px;
+  margin-top: 40px;
   &::before {
     content: '';
     position: absolute;
