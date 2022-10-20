@@ -242,7 +242,7 @@
 
   &:invalid {
     .submit__btn {
-        background-color: $grey-btn-cl;
+      background-color: $grey-btn-cl;
     }
   }
 }
@@ -582,6 +582,8 @@
 
   width: 132px;
   height: 136px;
+
+  transition: background $anim;
 
   padding: 0px 0px 20px 0px;
   border-radius: 16px;
