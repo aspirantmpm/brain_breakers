@@ -146,42 +146,45 @@
     border-radius: 50%;
 
     position: absolute;
-    top: 0;
+    top: 0px ;
     left: 50%;
-    transform: translatex(-50%) translateY(calc(-50% + 11px));
+
+    transform: translatex(-50%) translateY(calc(-50%));
     z-index: 1;
 
     @media screen and (min-width:768px) {
-        transform: translatex(-50%) translateY(calc(-60% + 11px));
+        
+        transform: translatex(-50%) translateY(calc(-60%));
     }
 
     @media screen and (min-width:1200px) {
         height: 300px;
         width: 300px;
-        transform: translatex(-50%) translateY(calc(-60% + 17px));
+
+        transform: translatex(-50%) translateY(calc(-60%));
     }
 }
 
 .products__items:first-child::before {
-    background-color:$green-circle-bg;
-    box-shadow: $green-circle-box-shadow;
+    background: $green-circle-bg;
+    box-shadow: $green-small-circle-box-shadow;
 }
 
 .products__items:nth-child(2)::before {
-    background-color: $yellow-circle-bg;
-    box-shadow: $yellow-circle-box-shadow;
+    background: $yellow-circle-bg;
+    box-shadow: $buy-now-modal-yellow-circle;
 }
 
 .products__items:last-child::before {
-    background-color:$brown-circle-bg;
-    box-shadow:$brown-circle-box-shadow;
+    background: $brown-circle-bg;
+    box-shadow: $buy-now-modal-brown-circle;
 }
 
 .products__items::after {
     content: '';
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: -11px;
     left: 50%;
     height: 200px;
     width: 200px;
@@ -189,6 +192,9 @@
     background-size: cover;
 
     z-index: 2;
+
+
+    
 }
 
 .products__items:first-child::after {
@@ -204,13 +210,36 @@
     transform: translatex(-50%) translateY(-50%);
 
     @media screen and (min-width:768px) {
+        
+        background-image: url(../images/tablet/product1@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/tablet/product1@2x.png);
+        }
+    
+
         transform: translatex(-50%) translateY(-60%);
+
+        
     }
 
     @media screen and (min-width:1200px) {
+        top:-17px;
         height: 300px;
         width: 300px;
         transform: translatex(-50%) translateY(-60%);
+
+        background-image: url(../images/desktop/product1@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/desktop/product1@2x.png);
+        }
+    
+
     }
 }
 
@@ -228,12 +257,31 @@
 
     @media screen and (min-width:768px) {
         transform: translatex(-50%) translateY(-60%);
+        
+        background-image: url(../images/tablet/product2@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/product2@2x.png);
+    }
+
+        
     }
 
     @media screen and (min-width:1200px) {
+        top:-17px;
         height: 300px;
         width: 300px;
         transform: translatex(-50%) translateY(-60%);
+
+        background-image: url(../images/desktop/product2@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/desktop/product2@2x.png);
+        }
     }
 }
 
@@ -251,12 +299,29 @@
 
     @media screen and (min-width:768px) {
         transform: translatex(-50%) translateY(-60%);
+
+        background-image: url(../images/tablet/product3@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/tablet/product3@2x.png);
+        }
     }
 
     @media screen and (min-width:1200px) {
+        top:-17px;
         height: 300px;
         width: 300px;
         transform: translatex(-50%) translateY(-60%);
+
+        background-image: url(../images/desktop/product3@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/desktop/product3@2x.png);
+        }
     }
 }
 
