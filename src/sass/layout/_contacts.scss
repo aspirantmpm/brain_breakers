@@ -64,6 +64,7 @@
     background-color: $main-txt-cl;
     padding: 40px 32px;
     width: 280px;
+    transition: .3s linear;
 
     @media screen and (min-width: $tablet) {
         width: 224px;
@@ -74,6 +75,11 @@
         width: 368px;
         padding: 40px 40px;
     }
+
+    &:hover {
+        box-shadow: 2px 2px rgb(255, 255, 255), 5px 5px $dark-green-bg;
+    }
+
 }
 
 .address__box {
@@ -150,18 +156,37 @@
         letter-spacing: 0.04em;
     }
 
-    .address__link {
+}
+
+.address__link {
+    position: relative;
+    color: $brown-txt-cl;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+
+    &:hover {
         color: $brown-txt-cl;
-        text-decoration: none;
-        transition: text-decoration $anim;
-        letter-spacing: 0.04em;
+    }
 
-        &:hover {
-            text-decoration: underline;
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: -webkit-transform 0.25s;
+        transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s;
+    }
 
-
-        }
-
+    &::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $brown-txt-cl;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.25s;
     }
 }
 
